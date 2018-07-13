@@ -1,3 +1,98 @@
 .header{
-
+  height: em(140);
+  background-color: white;
+  position: relative;
+  z-index: 5;
+  .header-logo{
+    width: em(94);
+    height: em(63);
+    display: inline-block;
+    margin-left: em(270);
+    margin-right: em(43);
+    margin-top: em(40);
+  }
+  .headerMenu{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: em(47);
+    li{
+      font-size: em(16);
+      color: #333333;
+      font-family: MontserratBold;
+      margin: 0 em(22);
+      list-style-type: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+  .headerMenu2{
+    display: inline-block;
+    float: right;
+    vertical-align: bottom;
+    margin: em(60) em(265) 0 0;
+    p{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: em(16);
+      color: #1b342e;
+      font-family: MontserratBold;
+      cursor: pointer;
+    }
+    img{
+      width: em(25);
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: em(34);
+      cursor: pointer;
+    }
+    .menu-close{
+      display: none;
+    }
+  }
+  .headerMenu-close{
+    p, .ic-menu{display: none}
+    .menu-close{display: inline-block;}
+  }
+  .menu{
+    position: absolute;
+    top: em(140);
+    left: 0;
+    right:0;
+    background-color: red;
+    padding-left: em(270);
+    padding-top: em(60);
+    height: em(565);
+    transform: translate3d(0, -570%, 0);
+    transition: all .7s ease;
+    box-shadow: -1px 8px 17px 0 rgba(0, 0, 0, 0.13);
+    z-index: 4;
+    .titl{
+      font-size: em(18);
+      color: #d5d5d5;
+      font-family: MontserratBold;
+    }
+    ul{
+      display: inline-block;
+      padding-left: 0;
+      width: em(350);
+      margin-top: em(45);
+    }
+    .r-ul{margin-left: em(50)}
+    li{
+      font-size: em(28);
+      list-style-type: none;
+      margin: em(15, 28) 0;
+      font-family: MontserratBold;
+      color: #1b342e;
+    }
+    .bot-inform{
+      font-size: em(16);
+      margin-top: em(175);
+      font-family: MontserratBold;
+      color: #1b342e;
+    }
+  }
+  .show{
+    transform: translate3d(0, 0, 0);
+  }
 }

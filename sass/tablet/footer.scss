@@ -1,12 +1,8 @@
 .footer{
-  border-top: 1px solid #b9b9b9;
   .l-block{
     margin-top: em(59);
-    display: inline-block;
-    position: relative;
-    margin-left: em(270);
+    margin-left: em(220);
     .social{
-      padding-left: 0;
       li{
         display: inline-block;
         transition: all .3s ease;
@@ -28,9 +24,7 @@
       }
     }
     .titl{
-      font-size: em(28);
-      font-family: MontserratBold;
-      color: #1b342e;
+      font-size: em(20);
       margin-top: em(20);
     }
     p{
@@ -41,15 +35,10 @@
     .email{
       margin-top: em(55);
       input{
-        font-size: em(20);
-        font-family: MontserratRegular;
-        line-height: em(26,20);
-        color: #b9b9b9;
-        padding-right: em(30,20);
-        border: none;
-        width: em(348,20);
-        border-bottom: 1px solid #b9b9b9;
-        display: inline-block;
+        font-size: em(16);
+        line-height: em(26,16);
+        padding-right: em(30,16);
+        width: em(348,16);
       }
       img{
         width: em(11);
@@ -59,17 +48,18 @@
     }
   }
   .r-block{
-    margin-left: em(125);
+    margin-left: em(220);
     display: inline-block;
     position: relative;
     vertical-align: top;
-    margin-top: em(120);
+    margin-top: 0;
+    padding-top: em(140);
     ul{
       display: inline-block;
       padding-left: 0;
       margin-left: em(90);
       position: relative;
-      vertical-align: top;
+      vertical-align: bottom;
     }
     ul:first-child{
       margin-left: 0;}
@@ -80,8 +70,13 @@
       margin: em(28) 0;}
     li:first-child{margin-top: 0}
     .contakt{
-      position: relative;
-      vertical-align: top;
+      text-align: center;
+      position: absolute;
+      display: block;
+      margin: 0;
+      padding: 0;
+      top: em(50);
+      left: em(60);
       li{
         font-size: em(18);
         color: #1b342e;
@@ -90,26 +85,13 @@
       li:first-child{margin-top: 0}
     }
     .logo{
-      width: em(94);
-      display: inline-block;
-      margin-left: em(123);
-      position: relative;
-      vertical-align: top;
-      margin-top: em(12);
-      img{width: 100%}
+      display: none;
     }
   }
   .bot-inf{
-    display: block;
-    margin-top: em(74);
-    border-top: 1px solid #b9b9b9;
-    .year, .maid{
-      font-family: MontserratRegular;
-      color: #1b342e;
-      padding: em(28) 0;
-      display: inline-block;
-    }
-    .year{margin-left: em(270);}
-    .maid{margin-right: em(270); float: right;}
+    margin-top: em(20);
+    text-align: center;
+    .year{margin-left: 0; margin-right: em(32); color: #1b342e}
+    .maid{margin-right: 0;margin-left: em(32); float: none;}
   }
 }

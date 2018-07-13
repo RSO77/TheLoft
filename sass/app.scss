@@ -7,20 +7,24 @@
 @import "parts/media";
 @import "libs/swiper";
 
-@import "parts/footer";
 @import "parts/header";
+@import "parts/footer";
 
 @import "parts/home";
 
 
+.tablet{
+  @import "tablet/header";
+  @import "tablet/footer";
+  @import "tablet/page/home";
+}
 
 .mobile{
-
+  @import "mobile/header";
+  @import "mobile/footer";
+  @import "mobile/page/home";
 }
 
-.tablet{
-
-}
 
 
 
