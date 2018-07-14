@@ -20,11 +20,11 @@ $(document).ready(function () {
             window_height = $(window).height();
 
         if (window_width <= widthMobile) {
-            $Body.css({'font-size': Math.min(40, Math.min(40 * window_width / widthMobile))});
+            $Body.css({'font-size': Math.min(defaultFont, Math.min(defaultFont * window_width / widthMobile))});
             $('html').addClass('mobile');
             $('html').removeClass('tablet');
         }else if (window_width <= widthTab) {
-            $Body.css({'font-size': Math.min(21, Math.min(21 * window_width / widthTab))});
+            $Body.css({'font-size': Math.min(defaultFont, Math.min(defaultFont * window_width / widthTab))});
             $('html').addClass('tablet');
             $('html').removeClass('mobile');
         }else {

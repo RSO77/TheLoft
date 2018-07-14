@@ -1,0 +1,88 @@
+.open-cooperation {
+    .breadcrumbs {
+        display: flex;
+        align-items: center;
+        &-wrapper {
+            margin-bottom: em(60);
+            padding-left: em(35);
+        }
+        &-item {
+            padding-right: 22px;
+            &:before {
+                width: 6px;
+                right: 10px;
+                right: 6px;
+            }
+            & a {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+        &-shortcut {
+            padding-right: 22px;
+            & a {
+                display: block;
+                font-size: 0;
+                line-height: 0;
+                width: 21px;
+                height: 11px;
+                background-image: url('../img/shortcut-img.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+    }    
+    .section1 {
+        flex-direction: column;
+        &-left {
+            max-width: none;
+            width: 100%;
+        }
+        &-img {
+            max-width: none;
+            height: em(780);
+            margin-bottom: em(41);
+        }
+        &-right {
+            width: 100%;
+            margin-bottom: em(120);
+            padding-left: em(36);
+        }
+        &-title {
+            margin-bottom: em(8);
+            font-size: em(48);
+            line-height: em(19.2);   
+        }
+        &-heading {
+            font-size: em(81.5);
+            line-height: em(20.71);
+        }
+        &-text {
+            width: em(340);
+            margin-bottom: em(42);
+            font-size: em(33.6);
+            line-height: em(32);
+        }
+        &-note {
+            width: em(340);
+            margin-bottom: em(65);
+            padding-left: em(28);
+            font-size: em(33.6);
+            line-height: em(32);
+        }
+        &-bg-text {
+            bottom: em(-3.15);
+            right: em(-10.1);
+            font-size: em(480);
+            letter-spacing: 1.5px;
+            text-transform: none;
+        }
+    }
+    & .btn {
+        max-width: none;
+        width: em(193);
+        margin-left: 0;
+        font-size: em(38.4);
+    }
+}

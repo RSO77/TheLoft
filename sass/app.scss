@@ -11,18 +11,32 @@
 @import "parts/footer";
 
 @import "parts/home";
+@import "parts/opencooperation";
+@import "parts/opencooperationcl";
+@import "parts/opencooperationdil";
+@import "parts/opencooperationdis";
 
 
 .tablet{
   @import "tablet/header";
   @import "tablet/footer";
+
   @import "tablet/page/home";
+  @import "tablet/page/opencooperation";
+  @import "tablet/page/opencooperationcl";
+  @import "tablet/page/opencooperationdil";
+  @import "tablet/page/opencooperationdis";
 }
 
 .mobile{
   @import "mobile/header";
   @import "mobile/footer";
+
   @import "mobile/page/home";
+  @import "mobile/page/opencooperation";
+  @import "mobile/page/opencooperationcl";
+  @import "mobile/page/opencooperationdil";
+  @import "mobile/page/opencooperationdis";
 }
 
 

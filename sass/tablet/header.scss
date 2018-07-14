@@ -1,11 +1,11 @@
 .header{
-  height: em(83);
+  height: em(110);
   .header-logo{
-    width: em(66);
-    height: em(44);
-    margin-left: em(51);
+    width: em(87);
+    height: em(65);
+    margin-left: em(68);
     margin-right: 0;
-    margin-top: em(20);
+    margin-top: em(27);
   }
   .headerMenu{
     display: none;
@@ -14,34 +14,38 @@
     display: inline-block;
     float: right;
     vertical-align: bottom;
-    margin: em(33) em(50) 0 0;
+    margin: em(44) em(68) 0 0;
+    img{
+      width: em(32);
+      margin-left: em(43);
+    }
+    p{font-size: em(22)}
   }
   .menu{
     top: em(83);
-    padding-left: em(130);
-    padding-top: em(232);
-    height: em(1200);
+    padding-left: em(170);
+    padding-top: em(322);
+    height: em(1500);
     transform: translate3d(0, -1200%, 0);
     box-shadow: -1px 8px 17px 0 rgba(0, 0, 0, 0.13);
+    .titl{
+      font-size: em(24);
+    }
     ul{
       display: inline-block;
       padding-left: 0;
       width: em(350);
-      margin-top: em(45);
+      margin-top: em(85);
     }
-    .r-ul{margin-left: em(50)}
+    .r-ul{margin-left: em(70)}
     li{
       font-size: em(28);
-      list-style-type: none;
+      line-height: em(70,28);
       margin: em(15, 28) 0;
-      font-family: MontserratBold;
-      color: #1b342e;
     }
     .bot-inform{
-      font-size: em(16);
-      margin-top: em(175);
-      font-family: MontserratBold;
-      color: #1b342e;
+      font-size: em(20);
+      margin-top: em(400,20);
     }
   }
   .show{

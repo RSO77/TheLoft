@@ -1,73 +1,69 @@
 .footer{
   .l-block{
-    margin-top: em(59);
-    margin-left: em(220);
+    margin-top: em(75);
+    margin-left: em(285);
     .social{
       li{
         display: inline-block;
         transition: all .3s ease;
         position: relative;
         vertical-align: middle;
-        padding: 0 em(26);
+        padding: 0 em(35);
         a img{
-          width: em(26);
+          width: em(35);
         }
         &:hover{
           opacity: .7;
         }
       }
       .facebook{
-        a img{width: em(13)}
+        a img{width: em(15)}
       }
       li:first-child{
         padding-left: 0;
       }
     }
     .titl{
-      font-size: em(20);
-      margin-top: em(20);
+      font-size: em(26);
+      margin-top: em(63, 26);
     }
     p{
-      font-family: MontserratRegular;
-      margin-top: em(14);
-      color: #5e5e5e;
+      font-size: em(21);
+      margin-top: em(27,21);
     }
     .email{
-      margin-top: em(55);
+      margin-top: em(73);
       input{
-        font-size: em(16);
-        line-height: em(26,16);
-        padding-right: em(30,16);
-        width: em(348,16);
+        font-size: em(21);
+        line-height: em(39,21);
+        padding-right: em(30,21);
+        width: em(450,21);
       }
       img{
-        width: em(11);
+        width: em(15);
         display: inline-block;
         margin-left: em(-20);
       }
     }
   }
   .r-block{
-    margin-left: em(220);
+    margin-left: em(290);
     display: inline-block;
     position: relative;
     vertical-align: top;
     margin-top: 0;
-    padding-top: em(140);
+    padding-top: em(195);
     ul{
-      display: inline-block;
-      padding-left: 0;
-      margin-left: em(90);
-      position: relative;
-      vertical-align: bottom;
+      margin-left: em(120);
     }
     ul:first-child{
       margin-left: 0;}
     li{
+      font-size: em(21);
       list-style-type: none;
       color: #333333;
       font-family: MontserratBold;
-      margin: em(28) 0;}
+      margin: em(38,21) 0;}
     li:first-child{margin-top: 0}
     .contakt{
       text-align: center;
@@ -75,12 +71,12 @@
       display: block;
       margin: 0;
       padding: 0;
-      top: em(50);
-      left: em(60);
+      top: em(73);
+      left: em(100);
       li{
-        font-size: em(18);
+        font-size: em(21);
         color: #1b342e;
-        margin: em(20,18) 0;
+        margin: em(20,21) 0;
       }
       li:first-child{margin-top: 0}
     }
@@ -89,9 +85,13 @@
     }
   }
   .bot-inf{
-    margin-top: em(20);
+    margin-top: em(10);
     text-align: center;
-    .year{margin-left: 0; margin-right: em(32); color: #1b342e}
-    .maid{margin-right: 0;margin-left: em(32); float: none;}
+    .year, .maid{
+      font-size: em(18);
+      padding: em(38,18) 0;
+    }
+    .year{margin-left: 0; margin-right: em(32,18); color: #1b342e}
+    .maid{margin-right: 0;margin-left: em(32,18); float: none;}
   }
 }

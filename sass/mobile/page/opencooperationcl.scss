@@ -1,0 +1,14 @@
+.open-cooperation_cl {
+    .section1-img {
+        background-image: url('../img/oc-cl-mob.png');
+        background-position: center;
+    }
+    .section1 {
+        &-heading {
+            margin-bottom: em(16);
+        }
+        &-bg-text {
+            right: em(-1);
+        }
+    }
+}

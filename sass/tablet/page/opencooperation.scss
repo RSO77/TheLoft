@@ -1,0 +1,46 @@
+.open-cooperation {
+    .breadcrumbs {
+        &-wrapper {
+            margin-bottom: em(47);
+            padding-left: em(57);
+        }
+    }
+    .section1 {
+        flex-direction: column;
+        padding-bottom: em(185);
+        &-left {
+            max-width: none;
+            width: 100%;
+        }
+        &-img {
+            max-width: none;
+            height: em(718);
+            margin-bottom: em(41);
+        }
+        &-title {
+            font-size: 16px;
+            margin-bottom: em(10);
+        }
+        &-right {
+            width: 100%;
+            margin-bottom: 0;
+            padding-left: em(75);
+        }
+        &-heading {
+            font-size: 38px;
+            margin-bottom: em(18);
+        }
+        &-text {
+            margin-bottom: em(48);
+        }
+        &-bg-text {
+            bottom: em(-0.3);
+            right: em(-17);
+            font-size: em(380);
+        }
+    }
+    & .btn {
+        margin-left: -12px;
+        font-size: 16px;
+    }
+}

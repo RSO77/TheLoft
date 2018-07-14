@@ -654,7 +654,7 @@
   .section5 {
     padding-top: em(40);
     position: relative;
-    padding-bottom: em(950);
+    padding-bottom: em(50);
     overflow: hidden;
     .titl{
       font-size: em(44);
@@ -776,6 +776,7 @@
 
     }
     .swiper-slide{
+      text-align: center;
     }
     .Group  {
       width: em(230);
@@ -794,6 +795,47 @@
     }
     .Velika {
       width: em(179);
+    }
+  }
+
+
+
+  .section1{
+    .mob{
+      display: none;
+    }
+    .swiper-pagination{
+      text-align: left;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets{
+      bottom: em(57);
+      left: em(800);
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 ;}
+    .swiper-pagination-bullet {
+      font-size: em(18);
+      width: em(60,18);
+      text-align: center;
+      line-height: em(20,18);
+      letter-spacing: 2px;
+      font-family: MontserratRegular;
+      text-transform: uppercase;
+      //margin: 0 25px;
+      padding-bottom: em(33,18);
+      color: #5e5e5e;
+      opacity: 1;
+      background-color: transparent;
+      border-bottom: 2px solid #5e5e5e;
+      border-radius: 0;
+      text-align: left;
+    }
+    .swiper-pagination-bullet-active {
+      font-family: MontserratBold;
+      color: #1b342e;
+      font-size: em(28);
+      padding-bottom: em(42,28);
+      background-color: transparent;
+      border-bottom: 3px solid #1b342e;
     }
   }
 }

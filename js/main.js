@@ -12,8 +12,11 @@ $(function () {
         // },
         // effect : 'fade',
         pagination: {
-            el: '.swiper-pagination',
+            el: '.sp1',
             clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (("0")+(index+1)) + '</span>';
+            },
         },
     });
 
@@ -34,6 +37,16 @@ $(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            1024: {
+                slidesPerView: 1.4,
+                spaceBetween: 70
+            }
+        }
     });
     //slider3
     var swiper2 = new Swiper('.swiper-sl3', {
@@ -43,6 +56,16 @@ $(function () {
         spaceBetween: 172,
         loop: true,
         slidesPerGroup: 1,
+        breakpoints: {
+            768: {
+                slidesPerView: 2.2,
+                spaceBetween: 50
+            },
+            1024: {
+                slidesPerView: 3.5,
+                spaceBetween: 60
+            }
+        }
     });
 
     //menu
