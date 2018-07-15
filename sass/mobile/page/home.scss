@@ -135,19 +135,25 @@
         background-color: #00cc99;
         font-family: MontserratBold;
         border: none;
-        a{
-          border: none;
+        a{border: none; position: relative}
+        a:after{
+          position: absolute;
+          bottom: em(-5);
+          margin: 0;
+          background-color: white;
+          right: 0;
         }
       }
-      li:nth-child(1){
-        background-color: #1b342e;
+      .activ-s2-b{
+        a:after{
+          right: auto;
+          left: 0;
+          width: 100%;
+        }
       }
-      li:nth-child(2){
-        background-color: #61ac9a;
-      }
-      li:nth-child(3){
-        background-color: #5e5e5e;
-      }
+      li:nth-child(1){ background-color: #1b342e; }
+      li:nth-child(2){ background-color: #61ac9a; }
+      li:nth-child(3){ background-color: #5e5e5e; }
     }
     .bot-block {
       width: 100%;
@@ -190,7 +196,7 @@
           box-shadow: -1px em(23) em(33) 0 rgba(29, 32, 108, 0.13);
         }
       }
-      .activ-b {
+      .activ-s2 {
         display: block
       }
     }
@@ -222,7 +228,6 @@
           height: em(10, 71);
         }
       }
-
       ul {
         margin-top: em(165);
         padding: 0;
@@ -236,9 +241,20 @@
         background-color: #00cc99;
         font-family: MontserratBold;
         border: none;
-        a{
-          border: none;
+        a{ border: none; position: relative; }
+        a:before{
+          position: absolute;
+          bottom: em(-5);
+          margin: 0;
+          background-color: white;
+          right: 0;
         }
+      }
+      .activ-s3-b{
+        a:before{
+          right: auto;
+          left: 0;
+          width: 100%; }
       }
       li:nth-child(1){
         background-color: #1b342e;
@@ -249,22 +265,7 @@
       li:nth-child(3){
         background-color: #5e5e5e;
       }
-      //ul {
-      //  margin-top: em(135);
-      //  padding-left: 0;
-      //}
-      //li {
-      //  font-size: em(28);
-      //  list-style-type: none;
-      //  font-family: MontserratRegular;
-      //  padding: 2px;
-      //  margin: em(32, 28) 0;
-      //  color: #b9b9b9;
-      //  &:hover{
-      //    color: #1b342e;
-      //    font-family: MontserratBold;
-      //  }
-      //}
+
       .lin {
         display: none;
       }
@@ -327,7 +328,7 @@
           box-shadow: -1px em(23) em(33) 0 rgba(29, 32, 108, 0.13);
         }
       }
-      .activ-b {
+      .activ-s3 {
         display: block
       }
     }

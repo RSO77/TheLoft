@@ -104,13 +104,13 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination sp1 desc"></div>
         </div>
-        <div class="bot-anim">
+        <a href="#section2" class="bot-anim">
             <p>Листай ниже </p>
             <img src="/media/img/ic-mouse.png" alt="">
-        </div>
+        </a>
     </div>
 
-    <div class="section2">
+    <div id="section2" class="section2">
         <div class="l-block">
             <img src="/media/img/bitmap.png" alt="">
             <p>История</p>
@@ -118,14 +118,14 @@
         <div class="r-block">
             <div class="titl">О КОМПАНИИ</div>
             <ul>
-                <li><a>Наша команда</a>  </li>
-                <li><a>История</a> </li>
-                <li><a>Достижения</a> </li>
+                <li class="command-b activ-s2-b"><a>Наша команда</a> </li>
+                <li class="history-b"><a>История</a> </li>
+                <li class="achievements-b"><a>Достижения</a> </li>
             </ul>
             <div class="lin"></div>
         </div>
         <div class="bot-block">
-            <div class="command bot-text activ-b">
+            <div class="command bot-text activ-s2">
                 <div class="titl">Наша Kоманда</div>
                 <p>Студия мебели Лофт Дизайн является объединением креативных единомышленников со свежими взглядами. Мы устали от шаблонов и обыденности и решили создать что-то новое и оригинальное.
                     Так и появилась первая коллекция столов от компании Лофт дизайн.</p>
@@ -141,7 +141,9 @@
                     Так и появилась первая коллекция столов от компании Лофт дизайн.</p>
             </div>
 
-            <a> Подробнее <img src="/media/img/arrow-right.png" alt=""></a>
+            <a> Подробнее <svg xmlns="http://www.w3.org/2000/svg" width="28" height="15" viewBox="0 0 28 15">
+                <path  fill-rule="evenodd" d="M28 7l-8-7-2 2 5 4H0v2h23l-5 5 2 2z"/>
+            </svg></a>
         </div>
         <div class="bg-paralax">О КОМ </div>
     </div>
@@ -150,10 +152,10 @@
         <div class="l-block">
             <div class="titl">КАТАЛОГ</div>
             <ul>
-                <li><a> Офисные Тумбы </a></li>
-                <li><a> Офисные столы </a></li>
-                <li><a> Офисные стелажи </a></li>
-                <li><a> Журнальные столики </a></li>
+                <li class="Curbstones-b"><a> Офисные Тумбы </a></li>
+                <li class="tables-b activ-s3-b"><a> Офисные столы </a></li>
+                <li class="racks-b"><a> Офисные стелажи </a></li>
+                <li class="Coffee-tables-b"><a> Журнальные столики </a></li>
             </ul>
             <div class="lin"></div>
         </div>
@@ -171,7 +173,7 @@
                 <p>Конкуренция быстро росла. Интернет-магазины догоняли нас и по количеству товаров, и по ценам. Было
                     несколько вариантов развития, один из них — снизить цены на товары.</p>
             </div>
-            <div class="tables bot-text activ-b">
+            <div class="tables bot-text activ-s3">
                 <div class="titl">Офисные столы</div>
                 <p>Студия мебели Лофт Дизайн является объединением креативных единомышленников со свежими взглядами. Мы
                     устали от шаблонов и обыденности и решили создать что-то новое и оригинальное. Так и появилась
@@ -425,7 +427,7 @@
     </div>
     <div class="bot-inf">
         <div class="year">© 2018 The loft, Inc.</div>
-        <div class="maid">Сделано в  Polyarix</div>
+        <div class="maid">Сделано в <span>Polyarix</span> </div>
     </div>
 </footer>
 

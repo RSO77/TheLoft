@@ -23,6 +23,24 @@
       list-style-type: none;
       display: inline-block;
       cursor: pointer;
+      position: relative;
+      &:after{
+        display: block;
+        content: "";
+        height: em(2);
+        width: 0%;
+        background-color: #1b342e;
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        transition: width .2s ease-in-out;
+      }
+    }
+    li:hover:after,
+    li:focus:after{
+      width: 100%;
+      right: auto;
+      left: 0;
     }
   }
   .headerMenu2{
@@ -37,6 +55,24 @@
       color: #1b342e;
       font-family: MontserratBold;
       cursor: pointer;
+      position: relative;
+      &:after{
+      display: block;
+      content: "";
+      height: em(2);
+      width: 0%;
+      background-color: #1b342e;
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+      transition: width .2s ease-in-out;
+    }
+    }
+    p:hover:after,
+    p:focus:after{
+      width: 100%;
+      right: auto;
+      left: 0;
     }
     img{
       width: em(25);
@@ -55,7 +91,7 @@
   }
   .menu{
     position: absolute;
-    top: em(140);
+    top: em(139);
     left: 0;
     right:0;
     background-color: white;
@@ -84,6 +120,22 @@
       margin: em(15, 28) 0;
       font-family: MontserratBold;
       color: #1b342e;
+      position: relative;
+      a:before{
+        display: inline-block;
+        content: "";
+        height: em(3,28);
+        background-color: #1b342e;
+        width: 0;
+        vertical-align: top;
+        position: relative;
+        margin: em(13,28) em(17,28) 0 0 ;
+        transition: width .2s ease-in-out;
+      }
+    }
+    li:hover a:before,
+    li:focus a:before{
+      width: em(55,28);
     }
     .bot-inform{
       font-size: em(16);

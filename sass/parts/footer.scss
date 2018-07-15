@@ -77,7 +77,27 @@
       list-style-type: none;
       color: #333333;
       font-family: MontserratBold;
-      margin: em(28) 0;}
+      margin: em(28) 0;
+      cursor: pointer;
+      position: relative;
+      a{position: relative}
+      a:after{
+        display: block;
+        content: "";
+        height: em(2);
+        width: 0%;
+        background-color: #1b342e;
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        transition: width .2s ease-in-out;
+      }}
+    li:hover a:after,
+    li:focus a:after{
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
     li:first-child{margin-top: 0}
     .contakt{
       position: relative;
@@ -108,6 +128,7 @@
       color: #1b342e;
       padding: em(28) 0;
       display: inline-block;
+      span{text-decoration: underline}
     }
     .year{margin-left: em(270);}
     .maid{margin-right: em(270); float: right;}

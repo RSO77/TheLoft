@@ -22,9 +22,9 @@
     p{font-size: em(22)}
   }
   .menu{
-    top: em(83);
+    top: em(105);
     padding-left: em(170);
-    padding-top: em(322);
+    padding-top: em(300);
     height: em(1500);
     transform: translate3d(0, -1200%, 0);
     box-shadow: -1px 8px 17px 0 rgba(0, 0, 0, 0.13);
@@ -42,6 +42,7 @@
       font-size: em(28);
       line-height: em(70,28);
       margin: em(15, 28) 0;
+      a:before{margin: em(30,28) em(17,28) 0 0 ;}
     }
     .bot-inform{
       font-size: em(20);
