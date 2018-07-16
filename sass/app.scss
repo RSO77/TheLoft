@@ -15,6 +15,7 @@
 @import "parts/opencooperationcl";
 @import "parts/opencooperationdil";
 @import "parts/opencooperationdis";
+@import "parts/error";
 
 
 .tablet{
@@ -26,6 +27,7 @@
   @import "tablet/page/opencooperationcl";
   @import "tablet/page/opencooperationdil";
   @import "tablet/page/opencooperationdis";
+  @import "tablet/page/error";
 }
 
 .mobile{
@@ -37,6 +39,7 @@
   @import "mobile/page/opencooperationcl";
   @import "mobile/page/opencooperationdil";
   @import "mobile/page/opencooperationdis";
+  @import "mobile/page/error";
 }
 
 
