@@ -1,0 +1,46 @@
+.error{
+  img{
+    width: 100%;
+    margin-top: em(60);
+  }
+  .tab, .mob{display: none}
+  .text-block{
+    position: absolute;
+    top: em(550);
+    right: em(483);
+    width: em(450);
+    .titl{
+      font-family: OswaldBold;
+      font-size: em(44);
+      color: #1b342e;
+      position: relative;
+      &:before{
+        content: '';
+        width: em(366,44);
+        height: em(53,44);
+        opacity: 0.35;
+        background-color: #e6e6e6;
+        position: absolute;
+        top: em(-30,44);
+        left: em(-30,44);
+      }
+    }
+    .text{
+      font-family: MontserratRegular;
+      font-size: em(20);
+      line-height: em(27,20);
+      color: #5e5e5e;
+      width: em(310);
+      margin-top: em(33);
+      margin-bottom: em(30);
+    }
+    a{
+      font-size: em(16);
+      font-family: MontserratBold;
+      color: white;
+      padding: em(14) em(43);
+      background-color: #58a794;
+      box-shadow: -1px 8px 17px 0 rgba(29, 32, 108, 0.13);
+    }
+  }
+}
