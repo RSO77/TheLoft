@@ -9,7 +9,7 @@
         position: relative;
         vertical-align: middle;
         padding: 0 em(35);
-        a img{
+        a svg{
           width: em(35);
         }
         &:hover{
@@ -17,7 +17,7 @@
         }
       }
       .facebook{
-        a img{width: em(15)}
+        a svg{width: em(15)}
       }
       li:first-child{
         padding-left: 0;
@@ -39,7 +39,7 @@
         padding-right: em(30,21);
         width: em(450,21);
       }
-      img{
+      svg{
         width: em(15);
         display: inline-block;
         margin-left: em(-20);

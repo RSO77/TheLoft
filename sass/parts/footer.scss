@@ -13,15 +13,19 @@
         position: relative;
         vertical-align: middle;
         padding: 0 em(26);
-        a img{
+        a svg{
           width: em(26);
+          fill: #1B342E;
         }
         &:hover{
           opacity: .7;
         }
       }
+      .twit{
+        a svg{fill: #58A794}
+      }
       .facebook{
-        a img{width: em(13)}
+        a svg{width: em(13)}
       }
       li:first-child{
         padding-left: 0;
@@ -51,10 +55,11 @@
         border-bottom: 1px solid #b9b9b9;
         display: inline-block;
       }
-      img{
+      svg{
         width: em(11);
         display: inline-block;
         margin-left: em(-20);
+        fill: #1B342E;
       }
     }
   }
@@ -116,7 +121,7 @@
       position: relative;
       vertical-align: top;
       margin-top: em(12);
-      img{width: 100%}
+      svg{width: 100%; fill: #1B342E}
     }
   }
   .bot-inf{

@@ -433,29 +433,17 @@
     .swiper-button-next, .swiper-button-prev{
       height: em(150);
       width: em(290);
-      img{
+      top: auto;
+      bottom: em(10);
+      svg{
         width: em(85);
       }
     }
     .swiper-button-next{
-      top: auto;
-      bottom: em(10);
       left: em(380);
     }
     .swiper-button-prev{
-      top: auto;
-      bottom: em(10);
       left: em(91);
-      transform: rotate(-180deg);
-      &:before{
-        content: '';
-        position: absolute;
-        left: 1px;
-        top: em(30);
-        width: em(1);
-        height: em(69);
-        background-color: #b9b9b9;
-      }
     }
 
   }
@@ -507,7 +495,7 @@
           width: em(530, 39);
           padding: em(10,39) 0;
         }
-        img{
+        svg{
           margin-top: em(25);
           width: em(45);
           margin-left: em(29);

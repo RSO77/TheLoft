@@ -10,6 +10,7 @@
     margin-left: em(270);
     margin-right: em(43);
     margin-top: em(40);
+    svg{fill: #1B342E}
   }
   .headerMenu{
     display: inline-block;
@@ -74,12 +75,13 @@
       right: auto;
       left: 0;
     }
-    img{
+    .img{
       width: em(25);
       display: inline-block;
       vertical-align: middle;
       margin-left: em(34);
       cursor: pointer;
+      svg{fill: #1B342E;}
     }
     .menu-close{
       display: none;

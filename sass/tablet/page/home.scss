@@ -399,7 +399,7 @@
           bottom: em(-27);
           left: 50%;
           transform: translate(-50%, 0);
-          img{
+          svg{
             width: em(13);
             position: absolute;
             left: 50%;
@@ -428,10 +428,7 @@
       position: absolute;
       height: em(135);
       width: em(170);
-      z-index: 2;
-      background: url("");
-      background-color: white;
-      img{
+      svg{
         width: em(45);
         position: absolute;
         top: 50%;
@@ -448,16 +445,6 @@
       top: auto;
       bottom: em(30);
       left: em(85);
-      transform: rotate(-180deg);
-      &:before{
-        content: '';
-        position: absolute;
-        left: 1px;
-        top: em(30);
-        width: em(1);
-        height: em(69);
-        background-color: #b9b9b9;
-      }
     }
 
   }
@@ -511,7 +498,7 @@
           width: em(640, 28);
           padding: em(10,28) 0;
         }
-        img{
+        svg{
           margin-top: em(0);
           display: inline-block;
           width: em(32);
