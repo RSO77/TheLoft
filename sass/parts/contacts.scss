@@ -1,0 +1,251 @@
+.contacts{
+  padding-top: em(18);
+  .breadcrumbs {
+    &-wrapper {
+      margin-bottom: em(66);
+      padding-left: em(277);
+    }
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &-item {
+      position: relative;
+      display: inline-block;
+      padding-right: 23px;
+      color: #5e5e5e;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 4px;
+        transform: translateY(-50%);
+        display: block;
+        width: 10px;
+        height: 12px;
+        background-image: url('../img/bc-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &:last-child {
+        padding-right: 0;
+        &:before {
+          display: none;
+        }
+      }
+      & a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+  }
+  .section1{
+    position: relative;
+    overflow: hidden;
+    .titl {
+      font-size: em(44);
+      font-family: OswaldBold;
+      color: #1b342e;
+      letter-spacing: em(4, 44);
+      position: relative;
+      z-index: 2;
+      margin-left: em(264,44);
+      margin-top: em(30, 44);
+      &:after {
+        content: '';
+        position: absolute;
+        top: em(-30, 44);
+        left: em(-70, 44);
+        width: em(173, 44);
+        height: em(53, 44);
+        background-color: #f8f8fa;
+        z-index: -1;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: em(-18, 44);
+        left: 0;
+        width: em(25, 44);
+        height: em(6, 44);
+        background-color: #1b342e;
+        z-index: -1;
+      }
+    }
+    .map{
+      position: relative;
+      z-index: 2;
+      margin-top: em(-80);
+      height: em(500);
+    }
+    .centr-block{
+      width: em(1244);
+      background-color: #ffffff;
+      box-shadow: -1px em(5) em(12) 0 rgba(29, 32, 108, 0.27);
+      padding-left: em(60);
+      padding-top: em(65);
+      padding-bottom: em(40);
+      margin-top: em(70);
+      margin-left: em(211);
+      position: relative;
+      z-index: 3;
+      .centr-titl{
+        font-size: em(40);
+        font-family: MontserratBold;
+        color: #1b342e;
+      }
+      .address{
+        display: inline-block;
+        width: em(450);
+        margin-top: em(20);
+        position: relative;
+        vertical-align: top;
+        p{
+          font-size: em(14);
+          line-height: em(24,14);
+          color: #1b342e;
+          margin-bottom: em(15);
+          font-family: MontserratMedium;
+          span:first-child{color: #348e79; cursor: pointer}
+          span:last-child{color: #4178b9; cursor: pointer}
+        }
+        .mail{
+          display: block;
+          margin-top: em(25);
+          font-family: MontserratMedium;
+          font-size: em(14);
+          line-height: em(24,14);
+          color: #333333;
+          text-decoration: underline;
+        }
+        .mob-adres{display: none}
+      }
+      .tel{
+        margin-top: em(20);
+        display: inline-block;
+        margin-left: em(17);
+        position: relative;
+        vertical-align: top;
+        a{
+          font-family: MontserratMedium;
+          font-size: em(14);
+          line-height: em(24,14);
+          color: #333333;
+          display: block;
+        }
+      }
+      .social{
+        display: inline-block;
+        padding-left: 0;
+        vertical-align: top;
+        position: relative;
+        margin-top: em(25);
+        margin-left: em(100);
+        li{
+          display: inline-block;
+          transition: all .3s ease;
+          position: relative;
+          vertical-align: middle;
+          padding: 0 em(26);
+          a svg{
+            width: em(26);
+            fill: #1B342E;
+          }
+          &:hover{
+            opacity: .7;
+          }
+        }
+        .twit{
+          a svg{fill: #58A794}
+        }
+        .facebook{
+          a svg{width: em(13)}
+        }
+        li:first-child{
+          padding-left: 0;
+        }
+      }
+    }
+    .feedback{
+      width: em(1244);
+      margin-left: em(211);
+      margin-top: em(60);
+      padding-left: em(58);
+      padding-top: em(56);
+      background-color: #ffffff;
+      box-shadow: -1px em(5) em(12) 0 rgba(29, 32, 108, 0.27);
+      padding-bottom: em(78);
+      margin-bottom: em(55);
+      .titl-feed{
+        display: block;
+        font-family: OswaldBold;
+        font-size: em(28);
+        letter-spacing: em(2.5, 28);
+        color: #1b342e;
+        margin-bottom: em(88,28);
+      }
+      .name, .email, .telephone, .comment{
+        display: inline-block;
+        width: em(435);
+        p{
+          font-family: MontserratBold;
+          color: #1b342e;
+          margin-bottom: em(45);
+        }
+        input, textarea{
+          border: none;
+          border-bottom: 1px solid #b9b9b9;
+          width: 100%;
+          &:hover{border-bottom: 1px solid #d5d5d5;}
+        }
+      }
+      .name{
+      }
+      .email{
+        margin-left: em(159);
+      }
+      .telephone{
+        display: block;
+        margin-top: em(99);
+      }
+      .comment{
+        margin-top: em(99);
+        width: em(1025);
+        margin-bottom: em(40);
+        p{margin-bottom: em(60);}
+        textarea{
+
+        }
+      }
+    }
+    .captcha{
+      width: em(330);
+      height: em(85);
+      background-color: #b9b9b9;
+      margin-left: em(400);
+      display: inline-block;
+    }
+    .send{
+      display: inline-block;
+      color: white;
+      font-family: MontserratBold;
+      padding: em(15) em(50);
+      background-color: #58a794;
+      position: relative;
+      vertical-align: top;
+      margin-left: em(100);
+      cursor: pointer;
+    }
+    .bg-cont{
+      opacity: .6;
+      font-family: OswaldBold;
+      font-size: em(558);
+      letter-spacing: em(4,558);
+      position: absolute;
+      top: em(-50,558);
+      right: em(-70,558);
+      color: rgba(29, 32, 108, 0.03);
+    }
+  }
+}

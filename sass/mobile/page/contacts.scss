@@ -1,0 +1,205 @@
+.contacts{
+  padding-top: em(35);
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    &-wrapper {
+      margin-bottom: em(60);
+      padding-left: em(35);
+    }
+    &-item {
+      padding-right: 22px;
+      &:before {
+        width: 6px;
+        right: 10px;
+        right: 6px;
+      }
+      & a {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    &-shortcut {
+      padding-right: 22px;
+      & a {
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        width: 21px;
+        height: 11px;
+        background-image: url('../img/shortcut-img.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
+  .section1{
+    position: relative;
+    overflow: hidden;
+    .titl {
+      font-size: em(70);
+      margin-left: em(40,70);
+      margin-top: em(40, 70);
+      &:after {
+        top: em(-30, 70);
+        left: em(-40, 70);
+        width: em(173, 70);
+        height: em(53, 70);
+      }
+      &:before {
+        bottom: em(-18, 70);
+        width: em(40, 70);
+        height: em(6, 70);
+      }
+    }
+
+    .centr-block{
+      width: em(690);
+      padding-left: em(40);
+      padding-top: em(60);
+      padding-bottom: em(90);
+      margin-top: em(100);
+      margin-left: em(40);
+      .centr-titl{
+        font-size: em(53);
+        font-family: MontserratBold;
+        color: #1b342e;
+      }
+      .address{
+        display: inline-block;
+        width: em(570);
+        margin-top: em(45);
+        p{
+          font-size: em(32);
+          margin-top: em(15,32);
+          line-height: em(50,32);
+          margin-bottom: em(10,32);
+        }
+        .mail{
+          display: block;
+          margin-top: em(70);
+          font-size: em(32);
+          line-height: em(24,32);
+        }
+        .mob-adres:first-child{color: #348e79; cursor: pointer; }
+        .mob-adres:last-child{color: #4178b9; cursor: pointer;}
+        .mob-adres{
+          display: block;
+          font-size: em(34);
+          margin-top: em(30,34);
+        }
+        .desc{display: none}
+      }
+      .tel{
+        margin-top: em(48);
+        margin-left: 0;
+        a{
+          font-size: em(32);
+          line-height: em(55,32);
+        }
+      }
+      .social{
+        display: block;
+        padding-left: 0;
+        vertical-align: top;
+        position: relative;
+        margin-top: em(70);
+        margin-left: em(0);
+        li{
+          vertical-align: top;
+          padding: 0 em(44);
+          a svg{
+            width: em(52);
+          }
+        }
+        .twit{
+          a svg{fill: #58A794}
+        }
+        .facebook{
+          a svg{width: em(24)}
+        }
+        li:first-child{
+          padding-left: 0;
+        }
+      }
+    }
+    .map{
+      position: relative;
+      z-index: 2;
+      margin-top: em(-955);
+      height: em(1780);
+    }
+    .feedback{
+      width: em(725);
+      margin-left: em(20);
+      margin-top: em(90);
+      padding-left: em(57);
+      padding-top: em(85);
+      box-shadow: -1px em(5) em(12) 0 rgba(29, 32, 108, 0.27);
+      padding-bottom: em(130);
+      margin-bottom: em(130);
+      .titl-feed{
+        font-size: em(49);
+        letter-spacing: em(2.5, 49);
+        margin-bottom: em(110,49);
+      }
+      .name, .email, .telephone, .comment{
+        width: em(690);
+        display: block;
+        p{
+          font-size: em(32);
+          margin-bottom: em(68,32);
+        }
+        input, textarea{
+          font-size: em(32);
+          border-bottom: 2px solid #b9b9b9;
+          width: 100%;
+          margin-left: em(-35,32);
+          padding-left: em(35,32);
+          &:hover{border-bottom: 2px solid #d5d5d5;}
+        }
+      }
+      .name{
+      }
+      .email{
+        margin-left: 0;
+        margin-top: em(110);
+      }
+      .telephone{
+        display: block;
+        margin-top: em(110);
+      }
+      .comment{
+        margin-top: em(110);
+        width: em(680);
+        margin-bottom: em(90);
+        p{
+          margin-bottom: em(110,32);
+          width: em(450,32);
+          line-height: em(44,32);
+        }
+        textarea{
+
+        }
+      }
+    }
+    .captcha{
+      width: em(620);
+      height: em(160);
+      display: block;
+      margin-left: 0;
+    }
+    .send{
+      font-size: em(36);
+      display: block;
+      padding: em(22,21) 0;
+      text-align: center;
+      margin-left: em(-25);
+      margin-top: em(45,21);
+    }
+    .bg-cont{
+      display: none;
+    }
+  }
+}
