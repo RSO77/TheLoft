@@ -20,6 +20,16 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'MontserratMedium';
+  src: url('/media/fonts/Montserrat-Medium.eot');
+  src: url('/media/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('/media/fonts/Montserrat-Medium.woff') format('woff'),
+  url('/media/fonts/Montserrat-Medium.ttf') format('truetype'),
+  url('/media/fonts/Montserrat-Medium.svg#DINProBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
   font-family: 'OswaldBold';
   src: url('/media/fonts/OswaldBold.eot');
   src: url('/media/fonts/OswaldBold.eot?#iefix') format('embedded-opentype'),

@@ -6,6 +6,8 @@
 @import "base/fonts";
 @import "parts/media";
 @import "libs/swiper";
+@import "libs/slick";
+@import "libs/slick-theme";
 
 @import "parts/header";
 @import "parts/footer";
@@ -16,6 +18,7 @@
 @import "parts/opencooperationdil";
 @import "parts/opencooperationdis";
 @import "parts/error";
+@import "parts/card";
 
 
 .tablet{
@@ -28,6 +31,7 @@
   @import "tablet/page/opencooperationdil";
   @import "tablet/page/opencooperationdis";
   @import "tablet/page/error";
+  @import "tablet/page/card";
 }
 
 .mobile{
@@ -40,6 +44,7 @@
   @import "mobile/page/opencooperationdil";
   @import "mobile/page/opencooperationdis";
   @import "mobile/page/error";
+  @import "mobile/page/card";
 }
 
 

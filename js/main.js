@@ -67,7 +67,7 @@ $(function () {
         }
     });
     //slider3
-    var swiper2 = new Swiper('.swiper-sl3', {
+    var swiper3 = new Swiper('.swiper-sl3', {
         slidesPerView: 'auto',
         centeredSlides: true,
         speed: 700,
@@ -85,6 +85,7 @@ $(function () {
             }
         }
     });
+
 
     //menu
     $('#nav-icon1').click(function () {
@@ -134,6 +135,47 @@ $(function () {
     $('.tables-b').click(function () {
         $('.tables').addClass('activ-s3'); $('.tables-b').addClass('activ-s3-b');
         $('.Curbstones-b,.racks-b,.Coffee-tables-b').removeClass('activ-s3-b');$('.Curbstones,.racks,.Coffee-tables').removeClass('activ-s3');
+    });
+
+
+ //CARD
+    //slider card
+    $('.slider-big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-litl'
+    });
+    $('.slider-litl').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-big',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+    });
+
+    $('.border4').click(function () {
+        $('.border4').addClass('color-border-active');  $('.color4').addClass('color-name-active');
+        $('.border3, .border2, .border1').removeClass('color-border-active');   $('.color3,.color2,.color1').removeClass('color-name-active');
+    });
+    $('.border1').click(function () {
+        $('.border1').addClass('color-border-active');  $('.color1').addClass('color-name-active');
+        $('.border3, .border2, .border4').removeClass('color-border-active');   $('.color3,.color2,.color4').removeClass('color-name-active');
+    });
+    $('.border2').click(function () {
+        $('.border2').addClass('color-border-active');  $('.color2').addClass('color-name-active');
+        $('.border3, .border4, .border1').removeClass('color-border-active');   $('.color3,.color4,.color1').removeClass('color-name-active');
+    });
+    $('.border3').click(function () {
+        $('.border3').addClass('color-border-active');  $('.color3').addClass('color-name-active');
+        $('.border4, .border2, .border1').removeClass('color-border-active');   $('.color4,.color2,.color1').removeClass('color-name-active');
+    });
+
+
+    $('.description').click(function () {
+        $('.section2').toggleClass('cart-open');
     });
 
 });
