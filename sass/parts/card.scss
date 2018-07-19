@@ -429,6 +429,8 @@
           transition: all .4s ease;
           &:hover{background-color: #58a794;}
         }
+        .read{display: inline-block}
+        .hide{display: none}
       }
       .r-bottom{
         margin-top: em(79);
@@ -468,6 +470,8 @@
         &:before{display: none}}
       .button{
         .buy{opacity: 1}
+        .read{display: none}
+        .hide{display: inline-block}
       }
     }
   }

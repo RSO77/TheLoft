@@ -231,6 +231,7 @@
         transition: all .4s ease;
         &:hover{background-color: #58a794;}
       }
+      .mob{display: none}
       .characteristics {
         border-bottom: 1px solid #b9b9b9;
         margin-top: em(172);

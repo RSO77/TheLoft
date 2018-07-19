@@ -16,6 +16,10 @@
   }
   .section1 {
     padding-bottom: em(100);
+    height: 100vh;
+    position: relative;
+    .swiper-sl1{
+    }
     .text-center {
       margin-left: em(270);
       margin-top: em(234);
@@ -62,9 +66,11 @@
     .img {
       float: right;
       width: em(895);
+      height: 100%;
       position: relative;
       img {
         width: 100%;
+        height: 100%;
       }
       .s1-pop-up {
         color: #1b342e;
@@ -134,10 +140,10 @@
       }
     }
     .bot-anim {
+      position: absolute;
       display: block;
-      margin-left: em(270);
-      margin-top: em(-9);
-      position: relative;
+      left: em(270);
+      bottom: em(170);
       z-index: 9;
       height: em(73);
       p {
@@ -669,7 +675,7 @@
           font-family: MontserratRegular;
           margin-top: em(50, 14);
         }
-        .plus {
+        .plus{
           width: em(55);
           height: em(55);
           display: block;
@@ -690,8 +696,8 @@
             opacity: 0.6;
             fill: #1B342E;
           }
+          .m{display: none}
         }
-
       }
       .swiper-slide-active {
         .center-block {
@@ -712,6 +718,10 @@
             svg {
               opacity: 1
             }
+          }
+          .active-plus{
+            .p{display: none}
+            .m{display: block}
           }
         }
       }
@@ -736,6 +746,14 @@
       top: auto;
       bottom: em(40);
       left: em(600);
+
+      p {
+        font-size: em(14);
+        font-family: MontserratRegular;
+        line-height: em(24, 14);
+        color: #b9b9b9;
+        width: em(392, 14);
+      }
     }
     .swiper-button-prev {
       top: auto;
@@ -752,7 +770,32 @@
       }
     }
 
-    .inform-s4{display: none}
+    .inform-s4{
+      display: none;
+      position: absolute;
+      top:em(740);
+      left: em(670);
+      padding: em(50) em(80);
+      z-index: 99;
+      background-image: linear-gradient(127deg, #d5ece7, #85c7b7);
+      box-shadow: -1px 8px 17px 0 rgba(29, 32, 108, 0.13);
+      height: em(400);
+      overflow-y: scroll;
+      .list{
+        width: em(420, 14);
+        font-size: em(14);
+        font-family: MontserratRegular;
+        line-height: em(24, 14);
+        color: #b9b9b9;
+        background-color: white;
+        padding: em(40);
+        .text{
+        }
+      }
+    }
+    .inform-s4-active{
+      display: block;
+    }
 
   }
   .section5 {
@@ -973,7 +1016,7 @@
       text-align: left;
     }
     .swiper-container-horizontal > .swiper-pagination-bullets {
-      bottom: em(57);
+      bottom: em(180);
       left: em(800);
     }
     .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -982,7 +1025,6 @@
     .swiper-pagination-bullet {
       font-size: em(18);
       width: em(60, 18);
-      text-align: center;
       line-height: em(20, 18);
       letter-spacing: 2px;
       font-family: MontserratRegular;

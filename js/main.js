@@ -138,23 +138,42 @@ $(function () {
     });
 
 
+    // $('.section4 .plus').click(function () {
+    //     $(this).toggleClass('active-plus');
+    // });
+    $('.plus-inf1').click(function () {
+        $('.plus-inf1').toggleClass('active-plus');  $('.inf-sl1').toggleClass('inform-s4-active');
+        $('.plus-inf2,.plus-inf3,.plus-inf4,.plus-inf5,.plus-inf6').removeClass('active-plus');
+        $('.inf-sl2,.inf-sl3,.inf-sl4,.inf-sl5,.inf-sl6').removeClass('inform-s4-active');
+    });
+    $('.plus-inf2').click(function () {
+        $('.plus-inf2').toggleClass('active-plus');  $('.inf-sl2').toggleClass('inform-s4-active');
+        $('.plus-inf1,.plus-inf3,.plus-inf4,.plus-inf5,.plus-inf6').removeClass('active-plus');
+        $('.inf-sl1,.inf-sl3,.inf-sl4,.inf-sl5,.inf-sl6').removeClass('inform-s4-active');
+    });
+    $('.plus-inf3').click(function () {
+        $('.plus-inf3').toggleClass('active-plus');  $('.inf-sl3').toggleClass('inform-s4-active');
+        $('.plus-inf2,.plus-inf1,.plus-inf4,.plus-inf5,.plus-inf6').removeClass('active-plus');
+        $('.inf-sl2,.inf-sl1,.inf-sl4,.inf-sl5,.inf-sl6').removeClass('inform-s4-active');
+    });
+    $('.plus-inf4').click(function () {
+        $('.plus-inf4').toggleClass('active-plus');  $('.inf-sl4').toggleClass('inform-s4-active');
+        $('.plus-inf2,.plus-inf3,.plus-inf1,.plus-inf5,.plus-inf6').removeClass('active-plus');
+        $('.inf-sl2,.inf-sl3,.inf-sl1,.inf-sl5,.inf-sl6').removeClass('inform-s4-active');
+    });
+    $('.plus-inf5').click(function () {
+        $('.plus-inf5').toggleClass('active-plus');  $('.inf-sl5').toggleClass('inform-s4-active');
+        $('.plus-inf2,.plus-inf3,.plus-inf4,.plus-inf1,.plus-inf6').removeClass('active-plus');
+        $('.inf-sl2,.inf-sl3,.inf-sl4,.inf-sl1,.inf-sl6').removeClass('inform-s4-active');
+    });
+    $('.plus-inf6').click(function () {
+        $('.plus-inf6').toggleClass('active-plus');  $('.inf-sl6').toggleClass('inform-s4-active');
+        $('.plus-inf2,.plus-inf3,.plus-inf4,.plus-inf5,.plus-inf1').removeClass('active-plus');
+        $('.inf-sl2,.inf-sl3,.inf-sl4,.inf-sl5,.inf-sl1').removeClass('inform-s4-active');
+    });
+
+
  //CARD
-    //slider card
-    $('.slider-big').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-litl'
-    });
-    $('.slider-litl').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-big',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true
-    });
 
     $('.border4').click(function () {
         $('.border4').addClass('color-border-active');  $('.color4').addClass('color-name-active');
@@ -177,5 +196,24 @@ $(function () {
     $('.description').click(function () {
         $('.section2').toggleClass('cart-open');
     });
+    
+    //slider card
+    $('.slider-big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-litl'
+    });
+    $('.slider-litl').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-big',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+    });
+
+
 
 });

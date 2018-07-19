@@ -1,11 +1,11 @@
 
 @font-face {
   font-family: 'MontserratBold';
-  src: url('/media/fonts/Montserrat-Bold.eot');
-  src: url('/media/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-  url('/media/fonts/Montserrat-Bold.woff') format('woff'),
-  url('/media/fonts/Montserrat-Bold.ttf') format('truetype'),
-  url('/media/fonts/Montserrat-Bold.svg#DINProBold') format('svg');
+  src: url('./media/fonts/Montserrat-Bold.eot');
+  src: url('./media/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./media/fonts/Montserrat-Bold.woff') format('woff'),
+  url('./media/fonts/Montserrat-Bold.ttf') format('truetype'),
+  url('./media/fonts/Montserrat-Bold.svg#DINProBold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
@@ -13,29 +13,29 @@
   font-family: 'MontserratRegular';
   src: url('/media/fonts/Montserrat-Regular.eot');
   src: url('/media/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-  url('/media/fonts/Montserrat-Regular.woff') format('woff'),
-  url('/media/fonts/Montserrat-Regular.ttf') format('truetype'),
-  url('/media/fonts/Montserrat-Regular.svg#DINProBold') format('svg');
+  url('./media/fonts/Montserrat-Regular.woff') format('woff'),
+  url('./media/fonts/Montserrat-Regular.ttf') format('truetype'),
+  url('./media/fonts/Montserrat-Regular.svg#DINProBold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'MontserratMedium';
-  src: url('/media/fonts/Montserrat-Medium.eot');
-  src: url('/media/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-  url('/media/fonts/Montserrat-Medium.woff') format('woff'),
-  url('/media/fonts/Montserrat-Medium.ttf') format('truetype'),
-  url('/media/fonts/Montserrat-Medium.svg#DINProBold') format('svg');
+  src: url('./media/fonts/Montserrat-Medium.eot');
+  src: url('./media/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./media/fonts/Montserrat-Medium.woff') format('woff'),
+  url('./media/fonts/Montserrat-Medium.ttf') format('truetype'),
+  url('./media/fonts/Montserrat-Medium.svg#DINProBold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'OswaldBold';
-  src: url('/media/fonts/OswaldBold.eot');
-  src: url('/media/fonts/OswaldBold.eot?#iefix') format('embedded-opentype'),
-  url('/media/fonts/OswaldBold.woff') format('woff'),
-  url('/media/fonts/OswaldBold.ttf') format('truetype'),
-  url('/media/fonts/OswaldBold.svg#DINProBold') format('svg');
+  src: url('./media/fonts/OswaldBold.eot');
+  src: url('./media/fonts/OswaldBold.eot?#iefix') format('embedded-opentype'),
+  url('./media/fonts/OswaldBold.woff') format('woff'),
+  url('./media/fonts/OswaldBold.ttf') format('truetype'),
+  url('./media/fonts/OswaldBold.svg#DINProBold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
