@@ -1,7 +1,7 @@
 $(function () {
 
     //scrol
-    $('.bot-anim').bind('click', function (e) {
+    $('.bot-anim,.btn-catalog').bind('click', function (e) {
         e.preventDefault();
         if ($(this).hasClass('prevent')) {
             return false;
