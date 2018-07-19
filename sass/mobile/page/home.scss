@@ -238,7 +238,7 @@
         padding: em(76,39) 0;
         margin: 0;
         color: white;
-        background-color: #00cc99;
+        background-color: #5e5e5e;
         font-family: MontserratBold;
         border: none;
         a{ border: none; position: relative; }
@@ -265,7 +265,9 @@
       li:nth-child(3){
         background-color: #5e5e5e;
       }
-
+      li:nth-child(4){
+        background-color: #818181;
+      }
       .lin {
         display: none;
       }
@@ -421,6 +423,14 @@
           border-radius: em(110);
           bottom: em(-55);
           left: 50%;
+          svg{
+            width: em(25);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s ease;
+          }
         }
 
       }
