@@ -184,7 +184,8 @@
       margin-left: em(76);
       position: relative;
       img {
-        width: 100%
+        width: 100%;
+        display: none;
       }
       p {
         font-size: em(26);
@@ -192,18 +193,29 @@
         color: white;
         position: absolute;
         top: em(320, 26);
-        right: em(60, 26);
+        right: em(27, 26);
         transform: rotate(-90deg);
+        display: none;
+        width: em(210,26);
         &:before {
           content: '';
           position: absolute;
-          right: em(-227, 26);
+          right: em(-190, 26);
           top: em(5, 26);
           height: em(22, 26);
           width: em(3, 26);
           background-color: white;
         }
       }
+    }
+    .l-command{
+      .s2-comm-img, .s2-comm-p{display: block}
+    }
+    .l-history{
+      .s2-hist-img, .s2-hist-p{display: block}
+    }
+    .l-achievements{
+      .s2-achiev-img, .s2-achiev-p{display: block}
     }
     .r-block {
       margin-top: em(95);

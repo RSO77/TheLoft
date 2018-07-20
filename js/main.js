@@ -108,17 +108,21 @@ $(function () {
 
     //переключатель s2
     $('.command-b').click(function () {
-        $('.command-b').addClass('activ-s2-b');  $('.command').addClass('activ-s2');
+        $('.command-b').addClass('activ-s2-b');  $('.command').addClass('activ-s2'); $('.l-block').addClass('l-command');
         $('.history-b, .achievements-b').removeClass('activ-s2-b');   $('.history,.achievements').removeClass('activ-s2');
+        $('.l-block').removeClass('l-history');$('.l-block').removeClass('l-achievements');
     });
     $('.history-b').click(function () {
-        $('.history-b').addClass('activ-s2-b'); $('.history').addClass('activ-s2');
+        $('.history-b').addClass('activ-s2-b'); $('.history').addClass('activ-s2'); $('.l-block').addClass('l-history');
         $('.command-b,.achievements-b').removeClass('activ-s2-b'); $('.command,.achievements').removeClass('activ-s2');
+        $('.l-block').removeClass('l-command');$('.l-block').removeClass('l-achievements');
     });
     $('.achievements-b').click(function () {
-        $('.achievements-b').addClass('activ-s2-b'); $('.achievements').addClass('activ-s2');
+        $('.achievements-b').addClass('activ-s2-b'); $('.achievements').addClass('activ-s2'); $('.l-block').addClass('l-achievements');
         $('.command-b,.history-b').removeClass('activ-s2-b');$('.command,.history').removeClass('activ-s2');
+        $('.l-block').removeClass('l-history');$('.l-block').removeClass('l-command');
     });
+    
     //переключатель s3
     $('.Curbstones-b').click(function () {
         $('.Curbstones-b').addClass('activ-s3-b');  $('.Curbstones').addClass('activ-s3'); $('.s3-img1').addClass('activ-s3-img'); $('.up1').addClass('up-active-s3');

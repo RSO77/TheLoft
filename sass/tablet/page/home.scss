@@ -104,10 +104,11 @@
       p {
         font-size: em(21);
         top: em(240, 20);
-        right: em(44, 20);
+        right: em(15, 20);
         transform: rotate(-90deg);
+        width: em(180,21);
         &:before {
-          right: em(-170, 20);
+          right: em(-140, 20);
           top: em(5, 20);
           height: em(18, 20);
           width: em(3, 20);
