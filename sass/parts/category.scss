@@ -1,0 +1,303 @@
+.category {
+    .category-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .breadcrumbs-wrapper {
+        margin-bottom: em(25);
+        padding-top: em(20);
+    }
+    .section1 {
+        max-width: 1920px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section1-left {
+        padding-top: em(128);
+    }
+    .section1-right .category-img {
+        width: em(979);
+        min-height: em(509);
+        background-image: url('../img/cat-table-img.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .category-heading {
+        z-index: 2;
+        position: relative;
+        margin-bottom: em(22);
+        padding-left: em(99);
+        letter-spacing: 4px;
+        font-family: OswaldBold;
+        color: #1b342e;
+        font-size: em(44);
+        text-transform: uppercase;
+    }
+    .category-heading:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: em(76);
+        top: em(-7.5);
+        display: block;
+        width: em(62.5);
+        height: em(18);
+        background: #f8f8fa;
+    }
+    .category-heading:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: em(98.5);
+        bottom: em(-5.5);
+        display: block;
+        width: em(9.3);
+        height: em(1.4);
+        background: #1b342e;
+    }
+    .category-description {
+        max-width: 755px;
+        width: 100%;
+        padding-left: em(310);
+        color: #333333;
+        font-size: em(14);
+        font-family: MontserratRegular;
+        line-height: em(28);
+    }
+    .category-img {
+        max-width: 980px;
+    }
+    .section2 {
+        width: 100%;
+        padding: em(48) em(236);
+        padding-block-end: em(42);
+        .category-cards {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .category-col {
+            width: 33.333%;
+            margin-bottom: em(70);
+            padding: 0 em(34);
+        }
+        .category-card {
+            position: relative;
+        }
+        .category-card-img {
+            position: relative;
+        }
+        .category-card-ref {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: -1px 8px 17px 0 rgba(29,32,108,0.13);
+        }
+        .category-card-ref:hover {
+            box-shadow: -1px 23px 33px 0 rgba(29,32,108,0.13);
+        }
+        .category-card-img .card-img-big {
+            position: absolute;
+            z-index: 3;
+            top: em(24);
+            left: em(22);
+            display: block;
+            width: em(65);
+            height: em(65);
+            background-image: url('../img/ic-pluse.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: all 0.3s ease;
+        }
+        .category-card-img .card-img-big:hover {
+            transform: scale(0.9);
+        }
+        .category-card-img .card-img {
+            width: 100%;
+            min-height: em(320);
+            background-image: url('../img/card-img.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .category-card-bottom {
+            padding: em(30) em(37);
+            padding-bottom: em(40);
+            padding-right: em(15);
+        }
+        .category-card-title {
+            margin-bottom: em(14);
+            color: #1b342e;
+            font-family: OswaldBold;
+            font-size: em(24);
+        }
+        .category-card-info {
+            display: flex;
+            margin-bottom: em(29);
+        }
+        .card-info-item {
+            padding-right: em(24);
+            color: #1b342e;
+            font-size: em(14);
+        }
+        .card-info-item span {
+            display: inline-block;
+        }
+        .card-info-name {
+            padding-right: em(11);
+            font-family: MontserratMedium;
+        }
+        .card-info-val {
+            font-family: MontserratRegular;
+        }
+        .category-card-footer {
+            display: flex;
+            align-items: center;
+        }
+        .card-price {
+            position: relative;
+            padding-left: em(5);
+            padding-right: em(12.8);
+            color: #1a332d;
+            font-family: OswaldBold;
+            font-size: em(34);
+            letter-spacing: 4px;
+        }
+        .card-price sup {
+            position: absolute;
+            top: em(-8);
+            right: em(-3);
+            display: inline-block;
+            padding-bottom: em(1);
+            font-family: MontserratBold;
+            font-size: em(6.6);
+            line-height: em(25.1);
+            letter-spacing: 0;
+            border-bottom: 2px solid #1a332d;
+        }
+        .colors {
+            position: relative;
+            z-index: 4;
+            display: block;
+            margin-top: em(8);
+            margin-right: em(27);
+            .color-border {
+              cursor: pointer;
+              display: inline-block;
+              width: em(25);
+              height: em(25);
+              border-radius: 100%;
+              border: solid 1px #e6e6e6;
+              background-color: white;
+              position: relative;
+              margin-right: em(11);
+              img {
+                width: em(15);
+                height: em(15);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+              }
+              &:hover{
+                img{
+                  width: em(25);
+                  height: em(25);
+                }
+              }
+            }
+            .color-border-active2 {
+              border: none;
+              &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                width: em(7);
+                height: em(7);
+                background-color: white;
+                z-index: 2;
+                border-radius: em(7);
+              }
+              img {
+                width: em(25);
+                height: em(25);
+              }
+              &:hover{
+                img {
+                  width: em(25);
+                  height: em(25);
+                }}
+            }
+          }
+        .category-pagination-wrapper {
+            text-align: center;
+        }
+        .category-pagination {
+            display: inline-block;
+            min-width: em(294);
+            padding: em(7) em(10);
+            .pagination-item {
+                display: inline-block;
+                padding: em(10) em(7);
+                color: #B9B9B9;
+                font-size: em(16);
+                transition: all 0.3s ease;
+                border-radius: 2px;
+            }
+            .pagination-item:hover, .pagination-item.current {
+                background: #1b342e;
+                color: #fff;
+            }
+            .pagination-item.pagination-disabled {
+                background: none;
+                color: #b9b9b9;
+                user-select: none;
+            }
+            .pagination-item.pagination-prev {
+                padding-right: em(23);
+                color: #1b342e;
+                font-family: MontserratBold;
+            }
+            .pagination-item.pagination-next {
+                padding-left: em(23);
+                color: #1b342e;
+                font-family: MontserratBold;
+            }
+            .pagination-item.pagination-prev:hover, .pagination-item.pagination-next:hover {
+                background: none;
+                color: #58a794;
+            }
+        }
+    }
+    .section3 {
+        width: 100%;
+        padding-left: em(270);
+    }
+    .category-text-heading {
+        margin-bottom: em(17);
+        color: #1b342e;
+        font-size: em(24);
+        font-family: MontserratBold;
+    }
+    .category-par {
+        width: em(1300);
+        margin-bottom: em(40);
+        color: #5e5e5e;
+        font-size: em(14);
+        line-height: em(29);
+    }
+    .category-text-block {
+        margin-bottom: em(77);
+    }
+}

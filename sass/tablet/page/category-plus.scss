@@ -1,0 +1,48 @@
+.category-plus {
+    .section1-right .category-img {
+        background-image: url('../img/cat-plus-tab.png');
+    }
+    .category-goods {
+        flex-wrap: wrap;
+    }
+    .category-goods-col {
+        width: 50%;
+        margin-bottom: em(20);
+    }
+    .category-col-wrapper {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.category-plus-1 {
+    .section3 {
+        margin-bottom: 0;
+        padding: 0;
+        .block {
+            display: none;
+        }
+    }
+}
+
+.category-plus-2 {
+    .section3 {
+        display: block;
+        margin-bottom: 0;
+        padding: 0;
+        .block-1, .block-2 {
+            display: none;
+        }
+    }
+}
+
+.category-plus-3 {
+    .section3 {
+        display: block;
+        margin-bottom: 0;
+        padding: 0;
+        .block-1 {
+            display: none;
+        }
+        }
+    }

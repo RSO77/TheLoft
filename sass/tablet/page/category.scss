@@ -1,0 +1,186 @@
+.category {
+    padding-top: em(15);
+    overflow-x: hidden;
+    .section1 {
+        position: relative;
+        justify-content: flex-end;
+        padding-top: em(52);
+        overflow-x: hidden;
+    }
+    .section1-left {
+        position: absolute;
+        top: em(115);
+        left: 0;
+        padding-top: em(76);
+        width: em(674);
+        background: #fff;
+    }
+    .category-heading {
+        margin-bottom: em(26);
+        padding-left: em(23.5);
+        font-size: em(40);
+        letter-spacing: em(1.5);
+    }
+    .category-heading:before {
+        top: em(-10);
+        left: 0;
+        width: em(118);
+    }
+    .category-heading:after {
+        bottom: em(-6.5);
+        left: em(24);
+        height: em(2);
+    }
+    .category-description {
+        max-width: em(510);
+        width: 100%;
+        margin-bottom: em(55);
+        padding-left: em(53);
+        font-size: em(18);
+    }
+    .section1-right .category-img {
+        margin-right: auto;
+        max-width: none;
+        width: em(693);
+        min-height: em(679);
+        background-image: url('../img/cat-table-img-tab.png');
+    }
+    .section2 {
+        padding: 0 em(20);
+        padding-top: em(112);
+        .category-cards {
+            padding: 0 em(32.5);
+        }
+        .category-col {
+            width: 50%;
+            margin-bottom: em(40);
+            padding: 0 em(10);
+            &:nth-child(7) {
+                display: none;
+            }
+            &:nth-child(8) {
+                display: none;
+            }
+            &:nth-child(9) {
+                display: none;
+            }
+        }
+        .category-card-img .card-img {
+            min-height: em(330);
+        }
+        .category-card-img .card-img-big {
+            top: em(30);
+            left: em(28);
+            width: em(87);
+            height: em(87);
+        }
+        .category-card-bottom {
+            padding: em(21) em(18);
+            font-size: em(17.5);
+        }
+        .category-card-title {
+            margin-bottom: em(20);
+        }
+        .card-info-item {
+            padding-right: em(28);
+            font-size: em(14);
+        }
+        .card-info-name {
+            padding-right: em(8);
+        }
+        .category-card-footer {
+            flex-wrap: wrap;
+        }
+        .colors {
+          display: block;
+          width: 100%;
+          margin-top: em(5);
+          margin-bottom: em(26);
+          padding-left: em(5);
+          .color-border {
+            cursor: pointer;
+            display: inline-block;
+            width: em(29);
+            height: em(29);
+            border-radius: em(29);
+            border: solid 1px #e6e6e6;
+            background-color: white;
+            position: relative;
+            margin-right: em(15);
+            img {
+              width: em(18);
+              height: em(18);
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate3d(-50%, -50%, 0);
+            }
+            &:hover{
+              img{
+                width: em(29);
+                height: em(29);
+              }
+            }
+          }
+          .color-border-active2 {
+            border: none;
+            &:before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate3d(-50%, -50%, 0);
+              width: em(8);
+              height: em(8);
+              background-color: white;
+              z-index: 2;
+              border-radius: em(7);
+            }
+            img {
+              width: em(29);
+              height: em(29);
+            }
+            &:hover{
+              img {
+                width: em(29);
+                height: em(29);
+              }}
+          }
+        }
+        .card-price {
+            margin-bottom: em(8);
+            padding-left: em(1);
+            font-size: em(41.5);
+        }
+        .category-pagination {
+            padding: em(13) em(5);
+        }
+        .category-pagination .pagination-item {
+            padding: em(8) em(7.5);
+            font-size: em(21.5);
+        }
+        .category-pagination .pagination-item.pagination-prev {
+            padding-right: em(20);
+        }
+        .category-pagination .pagination-item.pagination-next {
+            padding-left: em(20);
+        }
+    }
+    .section3 {
+        padding-top: em(66);
+        padding-left: em(59);
+    }
+    .category-text-block {
+        margin-bottom: em(58);
+    }
+    .category-text-heading {
+        margin-bottom: em(20);
+        font-size: em(26.7);
+    }
+    .category-par {
+        width: em(642.5);
+        margin-bottom: em(30);
+        font-size: em(18.7);
+        line-height: em(32);
+    }
+}

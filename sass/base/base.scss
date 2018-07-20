@@ -81,3 +81,292 @@ a {
     right: em(-22,14);
   }
 }
+
+
+//breadcrumbs
+.breadcrumbs {
+  &-wrapper {
+    margin-bottom: em(66);
+    padding-left: em(277);
+  }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &-item {
+    position: relative;
+    display: inline-block;
+    padding-right: 23px;
+    color: #5e5e5e;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 4px;
+      transform: translateY(-50%);
+      display: block;
+      width: 10px;
+      height: 12px;
+      background-image: url('../img/bc-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    &:last-child {
+      padding-right: 0;
+      &:before {
+        display: none;
+      }
+    }
+    & a {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+}
+.tablet {
+  .breadcrumbs {
+    &-wrapper {
+      padding-left: em(57);
+    }
+    &-item {
+      padding-right: 24px;
+      &:before {
+        right: 5px;
+        width: 9px;
+        height: 10px;
+      }
+    }
+  }
+}
+.mobile {
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    &-wrapper {
+      margin-bottom: em(60);
+      padding-left: em(35);
+    }
+    &-item {
+      padding-right: 22px;
+      &:before {
+        width: 6px;
+        right: 10px;
+        right: 6px;
+      }
+      & a {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    &-shortcut {
+      padding-right: 22px;
+      & a {
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        width: 21px;
+        height: 11px;
+        background-image: url('../img/shortcut-img.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
+}
+//breadcrumbs-end
+
+//filter
+.filter {
+  .mobile-filter-wrapper {
+    display: none;
+  }
+  .filter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 em(8);
+  }
+  .filter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .filter-btns {
+    margin: 0;
+    padding: 0;
+  }
+  .filter-btns .filter-btn {
+    position: relative;
+    display: inline-block;
+    padding: em(14) 0;
+    padding-left: em(26);
+    padding-right: em(56);
+    color: #1b342e;
+    font-size: em(16);
+    font-weight: 700;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .filter-btns .filter-btn:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #d5d5d5;
+  }
+  .filter-btns .filter-btn_sort:before {
+    display: none;
+  }
+  .filter-btns .filter-btn:after {
+    content: '';
+    position: absolute;
+    right: em(20);
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: em(15);
+    height: em(8);
+    background-image: url('../img/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.3s ease;
+  }
+  .filter-btns .filter-btn:hover,.filter-btns .filter-btn.active {
+    background: #F8F8F8;
+  }
+
+  .filter-btns .filter-btn:hover:after, .filter-btns .filter-btn.active:after {
+    background-image: url('../img/arrow-down-hover.svg');
+  }
+  .filter-items {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    width: em(247);
+    margin-top: em(16);
+    padding-top: em(16);
+    background: #fff;
+    box-shadow: -1px 8px 17px 0 rgba(29,32,108,0.13);
+  }
+  .filter-items ul {
+    margin: 0;
+    margin-bottom: em(52);
+    padding: 0 20px;
+    list-style: none;
+  }
+  .filter-items .filter-item {
+    position: relative;
+    margin-bottom: em(23);
+    color: #1b342e;
+    font-size: em(14);
+    font-weight: 500;
+  }
+  .filter-items .filter-item .filter-checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+  .filter-items .filter-item label {
+    position: relative;
+    display: block;
+    padding-left: em(34.5);
+    cursor: pointer;
+  }
+  .filter-items .filter-item label:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: block;
+    width: em(23);
+    height: em(23);
+    background-color: #ffffff;
+    border: 1px solid #1b342e;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  .filter-items .filter-item .filter-checkbox:checked + label:before {
+    background-color: none;
+    background-image: url('../img/done-ico.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .filter-items .filter-accept {
+    display: block;
+    width: 100%;
+    padding: em(15) 0;
+    background: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-top: 1px solid #d5d5d5;
+    transition: all 0.3s ease;
+  }
+  .filter-btns .filter-btn:hover .filter-items {
+    z-index: 4;
+    visibility: visible;
+    opacity: 1;
+  }
+  .filter-items .filter-accept:hover {
+    background: #f8f8f8;
+  }
+  .filter-result {
+    margin: 0;
+    margin-bottom: em(46);
+    padding: 0 em(8);
+  }
+  .filter-result .result-item {
+    position: relative;
+    display: inline-block;
+    margin-top: em(36);
+    margin-right: em(24);
+    padding-right: em(15);
+    color: #b9b9b9;
+    font-size: em(16);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .filter-result .close-result {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: block;
+    width: em(8);
+    height: em(8);
+    background-image: url('../img/close-result.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+.tablet {
+  .filter {
+    .filter-btns .filter-btn {
+      padding-right: em(53);
+      font-size: em(21.5);
+    }
+    .filter-result {
+      margin-bottom: em(82);
+    }
+  }
+}
+.mobile {
+  .mobile-filter-wrapper {
+    display: block;
+  }
+  .filter-wrapper {
+    display: none;
+  }
+  .filter-result {
+    display: none;
+  }
+}
+//filter-end

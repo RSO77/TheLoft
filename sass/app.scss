@@ -21,6 +21,8 @@
 @import "parts/card";
 @import "parts/contacts";
 @import "parts/opengraph";
+@import "parts/category";
+@import "parts/category-plus";
 
 
 .tablet{
@@ -35,6 +37,8 @@
   @import "tablet/page/error";
   @import "tablet/page/card";
   @import "tablet/page/contacts";
+  @import "parts/category";
+  @import "parts/category-plus";
 }
 
 .mobile{
@@ -49,6 +53,8 @@
   @import "mobile/page/error";
   @import "mobile/page/card";
   @import "mobile/page/contacts";
+  @import "parts/category";
+  @import "parts/category-plus";
 }
 
 

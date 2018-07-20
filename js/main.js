@@ -193,6 +193,11 @@ $(function () {
     });
 
 
+    $('.category-col .color-border').click(function () {
+        $('.category-col .border4, .border2, .border1, .border3').removeClass('color-border-active2');
+        $(this).addClass('color-border-active2');
+    });
+
     $('.description').click(function () {
         $('.section2').toggleClass('cart-open');
     });
