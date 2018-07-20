@@ -121,20 +121,24 @@ $(function () {
     });
     //переключатель s3
     $('.Curbstones-b').click(function () {
-        $('.Curbstones-b').addClass('activ-s3-b');  $('.Curbstones').addClass('activ-s3');
+        $('.Curbstones-b').addClass('activ-s3-b');  $('.Curbstones').addClass('activ-s3'); $('.s3-img1').addClass('activ-s3-img'); $('.up1').addClass('up-active-s3');
         $('.tables, .racks, .Coffee-tables').removeClass('activ-s3');   $('.Coffee-tables-b,.tables-b,.racks-b').removeClass('activ-s3-b');
+        $('.s3-img2, .s3-img3, .s3-img4').removeClass('activ-s3-img');   $('.up2,.up3,.up4').removeClass('up-active-s3');
     });
     $('.Coffee-tables-b').click(function () {
-        $('.Coffee-tables').addClass('activ-s3'); $('.Coffee-tables-b').addClass('activ-s3-b');
+        $('.Coffee-tables').addClass('activ-s3'); $('.Coffee-tables-b').addClass('activ-s3-b'); $('.s3-img2').addClass('activ-s3-img'); $('.up2').addClass('up-active-s3');
         $('.Curbstones-b,.tables-b,.racks-b').removeClass('activ-s3-b'); $('.Curbstones,.racks,.tables').removeClass('activ-s3');
+        $('.s3-img1, .s3-img3, .s3-img4').removeClass('activ-s3-img');   $('.up1,.up3,.up4').removeClass('up-active-s3');
     });
     $('.racks-b').click(function () {
-        $('.racks').addClass('activ-s3'); $('.racks-b').addClass('activ-s3-b');
+        $('.racks').addClass('activ-s3'); $('.racks-b').addClass('activ-s3-b'); $('.s3-img3').addClass('activ-s3-img'); $('.up3').addClass('up-active-s3');
         $('.Curbstones-b,.tables-b,.Coffee-tables-b').removeClass('activ-s3-b');$('.Curbstones,.tables,.Coffee-tables').removeClass('activ-s3');
+        $('.s3-img2, .s3-img1, .s3-img4').removeClass('activ-s3-img');   $('.up2,.up1,.up4').removeClass('up-active-s3');
     });
     $('.tables-b').click(function () {
-        $('.tables').addClass('activ-s3'); $('.tables-b').addClass('activ-s3-b');
+        $('.tables').addClass('activ-s3'); $('.tables-b').addClass('activ-s3-b'); $('.s3-img4').addClass('activ-s3-img'); $('.up4').addClass('up-active-s3');
         $('.Curbstones-b,.racks-b,.Coffee-tables-b').removeClass('activ-s3-b');$('.Curbstones,.racks,.Coffee-tables').removeClass('activ-s3');
+        $('.s3-img2, .s3-img3, .s3-img1').removeClass('activ-s3-img');   $('.up2,.up3,.up1').removeClass('up-active-s3');
     });
 
 
