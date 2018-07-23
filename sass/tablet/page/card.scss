@@ -452,4 +452,11 @@
       }
     }
   }
+  .bg-card{
+    font-size: em(380);
+    bottom: em(-120,380);
+    left: 0;
+    letter-spacing: em(4,380);
+    text-transform: uppercase;
+  }
 }

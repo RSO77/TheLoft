@@ -406,4 +406,12 @@
     }
   }
   .mob-s2{display: block}
+
+  .bg-card{
+    font-size: em(440);
+    bottom: em(-40,440);
+    left: 0;
+    letter-spacing: em(7,440);
+    text-transform: none;
+  }
 }

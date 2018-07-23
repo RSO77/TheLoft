@@ -1,5 +1,7 @@
 .card {
   padding-top: em(18);
+  position: relative;
+  overflow: hidden;
   .breadcrumbs {
     &-wrapper {
       margin-bottom: em(66);
@@ -438,7 +440,7 @@
         }
         .buy{
           background-color: #1b342e;
-          padding: em(15) em(52);
+          padding: em(14) em(52);
           cursor: pointer;
           opacity: 0;
           transition: all .4s ease;
@@ -495,4 +497,16 @@
     }
   }
   .mob-s2{display: none}
+  .bg-card{
+    position: absolute;
+    bottom: em(-80,558);
+    font-size: em(558);
+    left: 0;
+    letter-spacing: em(4,558);
+    font-family: OswaldBold;
+    color: rgba(29, 32, 108, 0.03);
+    display: block;
+    z-index: -1;
+    white-space: nowrap;
+  }
 }
