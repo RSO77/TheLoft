@@ -18,6 +18,7 @@ $(function () {
         });
     });
 
+
     //slider
     var swiper = new Swiper('.swiper-sl1', {
         slidesPerView: 1,
@@ -41,7 +42,7 @@ $(function () {
     //slider2
     var swiper2 = new Swiper('.swiper-sl2', {
         slidesPerView: 2.8,
-        speed: 700,
+        speed: 2000,
         centeredSlides: true,
         spaceBetween: 150,
         loop: true,
@@ -87,9 +88,25 @@ $(function () {
     });
 
 
+    //slider card
+    $('.slider-big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-litl'
+    });
+    $('.slider-litl').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-big',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+    });
     //menu
     $('#nav-icon1').click(function () {
-        // $(this).toggleClass('open');
+        $('#nav-icon2').toggleClass('open');
         $('.menu').toggleClass('show');
         $('.headerMenu2').toggleClass('headerMenu-close');
         $('html,body,main').toggleClass('overflow');
@@ -145,10 +162,11 @@ $(function () {
         $('.s3-img2, .s3-img3, .s3-img1').removeClass('activ-s3-img');   $('.up2,.up3,.up1').removeClass('up-active-s3');
     });
 
-
-    // $('.section4 .plus').click(function () {
+    //
+    // $('.section4 ').click(function () {
     //     $(this).toggleClass('active-plus');
     // });
+
     $('.plus-inf1').click(function () {
         $('.plus-inf1').toggleClass('active-plus');  $('.inf-sl1').toggleClass('inform-s4-active');
         $('.plus-inf2,.plus-inf3,.plus-inf4,.plus-inf5,.plus-inf6').removeClass('active-plus');
@@ -179,7 +197,13 @@ $(function () {
         $('.plus-inf2,.plus-inf3,.plus-inf4,.plus-inf5,.plus-inf1').removeClass('active-plus');
         $('.inf-sl2,.inf-sl3,.inf-sl4,.inf-sl5,.inf-sl1').removeClass('inform-s4-active');
     });
-
+    $('.plus').click(function (){
+        if($('.section4 .plus').hasClass("active-plus")){
+            document.querySelector('.swiper-button-next ').style.display="none";
+            document.querySelector('.swiper-button-prev ').style.display="none";}
+        else{document.querySelector('.swiper-button-next').style.display="block";
+            document.querySelector('.swiper-button-prev').style.display="block";}
+    });
 
  //CARD
 
@@ -209,23 +233,7 @@ $(function () {
     $('.description').click(function () {
         $('.section2').toggleClass('cart-open');
     });
-    
-    //slider card
-    $('.slider-big').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-litl'
-    });
-    $('.slider-litl').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-big',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true
-    });
+
 
 
 

@@ -151,13 +151,11 @@
           a svg{
             width: em(26);
             fill: #1B342E;
+            transition: all .3s ease;
           }
           &:hover{
-            opacity: .7;
+            a svg{fill: #58A794}
           }
-        }
-        .twit{
-          a svg{fill: #58A794}
         }
         .facebook{
           a svg{width: em(13)}

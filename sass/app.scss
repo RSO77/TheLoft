@@ -37,8 +37,8 @@
   @import "tablet/page/error";
   @import "tablet/page/card";
   @import "tablet/page/contacts";
-  @import "parts/category";
-  @import "parts/category-plus";
+  @import "tablet/page/category-plus";
+  @import "tablet/page/category";
 }
 
 .mobile{
@@ -53,8 +53,8 @@
   @import "mobile/page/error";
   @import "mobile/page/card";
   @import "mobile/page/contacts";
-  @import "parts/category";
-  @import "parts/category-plus";
+  @import "mobile/page/category";
+  @import "mobile/page/category-plus";
 }
 
 

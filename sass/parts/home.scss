@@ -151,13 +151,26 @@
         font-family: MontserratBold;
         color: #1b342e;
       }
-      svg {
-        width: em(25);
-        margin-top: em(18);
-        fill: #FFF;
+      .mous {
+        width: 26px;
+        height: 35px;
+        margin-top: 15px;
+        border: 2px solid #000;
+        position: relative;
+        border-radius: 14px;
+        span{
+          width: 5px;
+          height: 5px;
+          position: absolute;
+          top: 3px;
+          left: 9px;
+          background-color: black;
+          border-radius: 100%;
+          z-index: 4;
+        }
       }
     }
-    .bot-anim svg {
+    .bot-anim .mous span {
       animation-name: example;
       animation-duration: .7s;
       animation-timing-function: linear;
@@ -167,9 +180,11 @@
     @keyframes example {
       0% {
         margin-top: em(2);
+        opacity: 1;
       }
       100% {
         margin-top: em(18);
+        opacity: 0;
       }
     }
   }
@@ -267,7 +282,7 @@
           display: inline-block;
           content: "";
           height: em(2, 28);
-          background-color: #1b342e;
+          background-color: #b9b9b9;
           width: 0;
           vertical-align: top;
           position: relative;
@@ -284,6 +299,7 @@
         font-family: MontserratBold;
         a:after {
           width: em(55, 28);
+          background-color: #1b342e;
         }
       }
       .lin {
@@ -415,7 +431,7 @@
           display: inline-block;
           content: "";
           height: em(2, 28);
-          background-color: #1b342e;
+          background-color: #b9b9b9;
           width: 0;
           vertical-align: top;
           position: relative;
@@ -432,6 +448,7 @@
         font-family: MontserratBold;
         a:before {
           width: em(55, 28);
+          background-color: #1b342e;
         }
       }
       .lin {
@@ -650,7 +667,7 @@
         background-color: white;
         top: em(162);
         z-index: 2;
-        transition: all .5s ease;
+        transition: all 1.5s ease;
         .photo {
           position: absolute;
           top: em(17);
@@ -741,6 +758,7 @@
           .active-plus{
             .p{display: none}
             .m{display: block}
+            .swiper-button-next, .swiper-button-prev{display: none}
           }
         }
       }
@@ -794,21 +812,39 @@
       position: absolute;
       top:em(740);
       left: em(670);
-      padding: em(50) em(80);
+      padding: em(80) em(80) em(40);
       z-index: 99;
       background-image: linear-gradient(127deg, #d5ece7, #85c7b7);
       box-shadow: -1px 8px 17px 0 rgba(29, 32, 108, 0.13);
       height: em(400);
       overflow-y: scroll;
       .list{
-        width: em(420, 14);
-        font-size: em(14);
-        font-family: MontserratRegular;
-        line-height: em(24, 14);
-        color: #b9b9b9;
+        width: em(420);
         background-color: white;
-        padding: em(40);
-        .text{
+        padding: em(0);
+        box-shadow: -1px 10px 42px 0 rgba(0, 0, 0, 0.1);
+      }
+      .full-screen{
+        width: em(65);
+        height: em(65);
+        position: absolute;
+        top: em(30);
+        left: em(30);
+        border-radius:em(3);
+        background-color: rgba(94, 94, 94, 0.2);
+        transition: all .4s ease;
+        svg{
+          fill: rgba(255, 255, 255, 0.8);
+          width: em(27);
+          height: em(27);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0);
+        }
+        &:hover{
+          background-color: rgba(94, 94, 94, 0.7);
+          svg{fill: #FFF}
         }
       }
     }
@@ -1006,6 +1042,7 @@
     }
     .swiper-slide {
       text-align: center;
+      cursor: pointer;
     }
     .Group {
       width: em(230);
@@ -1042,28 +1079,29 @@
       margin: 0;
     }
     .swiper-pagination-bullet {
-      font-size: em(18);
-      width: em(60, 18);
-      line-height: em(20, 18);
+      font-size: 18px;
+      width: 60px;
+      line-height: 20px;
       letter-spacing: 2px;
       font-family: MontserratRegular;
       text-transform: uppercase;
       //margin: 0 25px;
-      padding-bottom: em(35, 18);
+      padding-bottom: 35px;
       color: #5e5e5e;
       opacity: 1;
       background-color: transparent;
-      border-bottom: 2px solid #5e5e5e;
+      border-bottom: 1px solid #5e5e5e;
       border-radius: 0;
       text-align: left;
     }
     .swiper-pagination-bullet-active {
       font-family: MontserratBold;
       color: #1b342e;
-      font-size: em(28);
-      padding-bottom: em(42, 28);
+      font-size: 28px;
+      padding-bottom: 39px;
       background-color: transparent;
-      border-bottom: 3px solid #1b342e;
+      border-bottom: 2px solid #1b342e;
     }
   }
 }
+.disp{display: none}

@@ -460,14 +460,16 @@
       height: em(400);
       overflow-y: scroll;
       .list{
-        width: em(530, 14);
-        font-size: em(14);
-        font-family: MontserratRegular;
-        line-height: em(24, 14);
-        color: #b9b9b9;
+        width: em(530);
+        line-height: em(24);
         background-color: white;
-        padding: em(40);
-        .text{
+        .full-screen{
+          width: em(87);
+          height: em(87);
+          svg{
+            width: em(27);
+            height: em(27);
+          }
         }
       }
     }
@@ -605,14 +607,14 @@
     }
     .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 ;}
     .swiper-pagination-bullet {
-      font-size: em(22);
-      width: em(60,22);
-      line-height: em(20,22);
-      padding-bottom: em(46,22);
+      font-size: 22px;
+      width: 60px;
+      line-height: 20px;
+      padding-bottom: 46px;
     }
     .swiper-pagination-bullet-active {
-      font-size: em(37);
-      padding-bottom: em(50,32);
+      font-size: 37px;
+      padding-bottom: 50px;
     }
   }
 }

@@ -27,6 +27,7 @@
             max-width: 288px;
         }
         .category-goods-name {
+            bottom: em(15);
             font-size: em(43);
             &:hover {
                 box-shadow: none;
@@ -120,7 +121,7 @@
         }
         .filter-items .filter-item {
             font-size: em(16.5);
-            font-family: MontserratMedium;
+            font-weight: 500;
         }
     }
 }

@@ -16,14 +16,15 @@
         a svg{
           width: em(26);
           fill: #1B342E;
+          transition: all .3s ease;
         }
         &:hover{
-          opacity: .7;
+          a svg{fill: #58A794}
         }
       }
-      .twit{
-        a svg{fill: #58A794}
-      }
+      //.twit{
+      //  a svg{fill: #58A794}
+      //}
       .facebook{
         a svg{width: em(13)}
       }
@@ -43,7 +44,7 @@
       color: #5e5e5e;
     }
     .email{
-      margin-top: em(55);
+      margin-top: em(45);
       input{
         font-size: em(20);
         font-family: MontserratRegular;
@@ -54,6 +55,7 @@
         width: em(348,20);
         border-bottom: 1px solid #b9b9b9;
         display: inline-block;
+        padding-bottom: em(10,20);
       }
       svg{
         width: em(11);
