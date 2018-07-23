@@ -161,6 +161,7 @@
     transition: all .7s ease;
     box-shadow: -1px 8px 17px 0 rgba(0, 0, 0, 0.13);
     z-index: 4;
+    overflow: hidden;
     .titl{
       font-size: em(18);
       color: #d5d5d5;
@@ -201,6 +202,15 @@
       margin-top: em(175);
       font-family: MontserratBold;
       color: #1b342e;
+    }
+    .bg-menu{
+      color: rgba(29, 32, 108, 0.03);
+      font-family: OswaldBold;
+      font-size: em(558);
+      letter-spacing: em(4, 558);
+      position: absolute;
+      bottom: em(-210,558);
+      right: em(-530,558);
     }
   }
   .show{

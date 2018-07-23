@@ -51,6 +51,12 @@
       font-size: em(26);
       margin-top: em(390,26);
     }
+    .bg-menu{
+      font-size: em(430);
+      letter-spacing: em(12, 430);
+      bottom: em(-40,430);
+      right: em(-380,430);
+    }
   }
   .show{
     transform: translate3d(0, 0, 0);

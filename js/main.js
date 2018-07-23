@@ -42,14 +42,14 @@ $(function () {
     //slider2
     var swiper2 = new Swiper('.swiper-sl2', {
         slidesPerView: 2.8,
-        speed: 2000,
+        speed: 3000,
         centeredSlides: true,
         spaceBetween: 150,
         loop: true,
         slidesPerGroup: 1,
         loopFillGroupWithBlank: true,
         autoplay: {
-            delay: 7000,
+            delay: 1000,
             disableOnInteraction: false,
         },
         navigation: {

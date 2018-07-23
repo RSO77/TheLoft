@@ -25,7 +25,7 @@
     top: em(105);
     padding-left: em(170);
     padding-top: em(300);
-    height: em(1500);
+    height: em(1250);
     transform: translate3d(0, -1200%, 0);
     box-shadow: -1px 8px 17px 0 rgba(0, 0, 0, 0.13);
     .titl{
@@ -47,6 +47,12 @@
     .bot-inform{
       font-size: em(20);
       margin-top: em(400,20);
+    }
+    .bg-menu{
+      font-size: em(400);
+      letter-spacing: em(7, 400);
+      bottom: em(-90,400);
+      right: em(-390,400);
     }
   }
   .show{
