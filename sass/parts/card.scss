@@ -314,6 +314,9 @@
   .section2{
     padding-top: em(43);
     padding-bottom: em(125);
+    z-index: 1;
+    position: relative;
+    display: block;
     .l-block{
       margin-left: em(270);
       display: inline-block;
@@ -506,7 +509,6 @@
     font-family: OswaldBold;
     color: rgba(29, 32, 108, 0.03);
     display: block;
-    z-index: -1;
     white-space: nowrap;
   }
 }

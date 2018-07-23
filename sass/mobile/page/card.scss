@@ -58,6 +58,7 @@
           transform: translate3d(-50%, -50%, 0);
         }
       }
+      .share{display: none}
       .full-screen{
         top: em(30);
         &:hover{

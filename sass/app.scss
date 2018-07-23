@@ -8,6 +8,7 @@
 @import "libs/swiper";
 @import "libs/slick";
 @import "libs/slick-theme";
+@import "libs/jquery.custom-scroll";
 
 @import "parts/header";
 @import "parts/footer";
@@ -23,6 +24,7 @@
 @import "parts/opengraph";
 @import "parts/category";
 @import "parts/category-plus";
+@import "parts/homeanimate";
 
 
 .tablet{
@@ -39,6 +41,7 @@
   @import "tablet/page/contacts";
   @import "tablet/page/category-plus";
   @import "tablet/page/category";
+  @import "tablet/page/homeanimate";
 }
 
 .mobile{
@@ -55,6 +58,7 @@
   @import "mobile/page/contacts";
   @import "mobile/page/category";
   @import "mobile/page/category-plus";
+  @import "mobile/page/homeanimate";
 }
 
 

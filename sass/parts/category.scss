@@ -60,8 +60,7 @@
         background: #1b342e;
     }
     .category-description {
-        max-width: 755px;
-        width: 100%;
+        width: em(863);
         padding-left: em(310);
         color: #333333;
         font-size: em(14);
@@ -299,5 +298,24 @@
     }
     .category-text-block {
         margin-bottom: em(77);
+    }
+}
+
+.category-table {
+    .section3 {
+        position: relative;
+        overflow: hidden;
+    }
+    .section3-bg-text {
+        position: absolute;
+        right: em(-16.5);
+        bottom: em(-3.7);
+        font-family: 'Oswald';
+        font-size: em(558);
+        font-weight: 600;
+        color: rgba(29,32,108,0.03);
+        text-transform: uppercase;
+        letter-spacing: em(0.1147);
+        opacity: 0.6;
     }
 }

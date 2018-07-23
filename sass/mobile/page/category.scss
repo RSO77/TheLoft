@@ -149,6 +149,8 @@
         height: em(2.1);
     }
     .category-description {
+        max-width: em(510);
+        width: 100%;
         margin-bottom: em(56);
         padding-left: em(18.15);
         font-size: em(33.6);
@@ -165,5 +167,13 @@
     .category-par {
         width: em(331);
         font-size: em(33.6);
+    }
+}
+
+.category-table {
+    .section3-bg-text {
+        right: em(-25.5);
+        bottom: em(-2);
+        font-size: em(480);
     }
 }

@@ -1,0 +1,32 @@
+.home {
+    .section2 .l-block {
+        transform: translateX(0);
+        transition: all 0.3s ease;
+    }
+    .section2 .r-block {
+        transform: translateX(0);
+        transition: all 0.3s ease;
+        transition-delay: 0;
+    }
+    .section2 .bot-block {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease;
+        transition-delay: 0;
+    }
+    .section3 .l-block {
+        transform: translateX(0);
+        transition: all 0.3s ease;
+        transition-delay: 0;
+    }
+    .section3 .r-block {
+        transform: translateX(0);
+        transition: all 0.3s ease;
+    }
+    .section3 .bot-block {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease;
+        transition-delay: 0;
+    }
+}

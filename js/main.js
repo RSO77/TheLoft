@@ -22,14 +22,13 @@ $(function () {
     //slider
     var swiper = new Swiper('.swiper-sl1', {
         slidesPerView: 1,
-        speed: 700,
+        speed: 800,
         spaceBetween: 0,
         loop: true,
         autoplay: {
             delay: 7000,
             disableOnInteraction: false,
         },
-        effect : 'fade',
         pagination: {
             el: '.sp1',
             clickable: true,
@@ -48,10 +47,10 @@ $(function () {
         loop: true,
         slidesPerGroup: 1,
         loopFillGroupWithBlank: true,
-        autoplay: {
-            delay: 1000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 1000,
+        //     disableOnInteraction: false,
+        // },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -71,10 +70,13 @@ $(function () {
     var swiper3 = new Swiper('.swiper-sl3', {
         slidesPerView: 'auto',
         centeredSlides: true,
-        speed: 700,
+        speed: 4000,
         spaceBetween: 172,
         loop: true,
-        slidesPerGroup: 1,
+        slidesPerGroup: 1,autoplay: {
+            delay: 500,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             768: {
                 slidesPerView: 2.2,
@@ -235,6 +237,55 @@ $(function () {
     });
 
 
+    ///////////////parallax and animation
+    if(window.location.pathname=='/'){
+        $(window).on('scroll', function() {
+            if($(window).width() > 1024) {
+                parallax('#section2', '#bg-parallax-1');
+                parallax('#section3', '#bg-parallax-2');
+                parallax('#section5', '#bg-parallax-3');
+                elTransition('#section2', '.home .section2 .l-block');
+                elTransition('#section2', '.home .section2 .r-block');
+                elVisibility('#section2', '.home .section2 .bot-block');
+                elTransition('#section3', '.home .section3 .l-block');
+                elTransition('#section3', '.home .section3 .r-block');
+                elVisibility('#section3', '.home .section3 .bot-block');
+            } else {
+                $('#bg-parallax-1').css({"transform":"translateY(" + 0 + "px)"});
+                $('#bg-parallax-2').css({"transform":"translateY(" + 0 + "px)"});
+            }
+        });
+    }
+    else return false;
 
+
+    function elTransition(parentBlock, elementClass) {
+        var wScroll = $(window).scrollTop();
+        var blockOffset = $(parentBlock).offset().top;
+
+        if((wScroll) > (blockOffset/1.5)) {
+            $(elementClass).css({"transform":"translateX(" + 0 + "px)"});
+        }
+    }
+
+    function elVisibility(parentBlock, elementClass) {
+        var wScroll = $(window).scrollTop();
+        var blockOffset = $(parentBlock).offset().top;
+        if((wScroll - 20) > blockOffset) {
+            $(elementClass).css({'visibility': 'visible', 'opacity': '1' });
+        }
+    }
+
+    function parallax(parentBlock, elementId) {
+        var wScroll = $(window).scrollTop();
+        var blockOffset = $(parentBlock).offset().top;
+        var parallaxElement = $(elementId);
+
+        if((wScroll - 20) > blockOffset) {
+            $(parallaxElement).css({"transform":"translateY(" + ((blockOffset - wScroll)*0.2) + "px)"});
+        } else {
+            $(parallaxElement).css({"transform":"translateY(" + 0 + "px)"});
+        }
+    }
 
 });

@@ -1,0 +1,32 @@
+.home {
+    .section2 .l-block {
+        transform: translateX(-1000px);
+        transition: all 0.5s ease;
+    }
+    .section2 .r-block {
+        transform: translateX(1000px);
+        transition: all 0.5s ease;
+        transition-delay: 300ms;
+    }
+    .section2 .bot-block {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.45s ease;
+        transition-delay: 330ms;
+    }
+    .section3 .l-block {
+        transform: translateX(-1000px);
+        transition: all 0.5s ease;
+        transition-delay: 300ms;
+    }
+    .section3 .r-block {
+        transform: translateX(1000px);
+        transition: all 0.5s ease;
+    }
+    .section3 .bot-block {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.45s ease;
+        transition-delay: 330ms;
+    }
+}

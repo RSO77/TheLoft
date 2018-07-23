@@ -195,6 +195,7 @@
           border: none;
           border-bottom: 1px solid #b9b9b9;
           width: 100%;
+          resize: none;
           &:hover{border-bottom: 1px solid #d5d5d5;}
         }
       }
@@ -234,6 +235,11 @@
       vertical-align: top;
       margin-left: em(100);
       cursor: pointer;
+      box-shadow: -1px em(8) em(17) 0 rgba(29, 32, 108, 0.13);
+      &:hover{
+        background-color: #1b342e;
+        box-shadow: -1px em(20) em(20) 0 rgba(29, 32, 108, 0.13);
+      }
     }
     .bg-cont{
       opacity: .6;
