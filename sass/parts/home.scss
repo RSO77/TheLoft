@@ -960,6 +960,7 @@
           border-bottom: 1px solid #b9b9b9;
           position: relative;
           vertical-align: top;
+          &:focus{border-bottom: 1px solid #1B342E;}
         }
         svg {
           margin-top: em(5);

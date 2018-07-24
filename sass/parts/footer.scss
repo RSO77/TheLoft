@@ -56,6 +56,7 @@
         border-bottom: 1px solid #b9b9b9;
         display: inline-block;
         padding-bottom: em(10,20);
+        &:focus{border-bottom: 1px solid #1B342E;}
       }
       svg{
         width: em(11);
