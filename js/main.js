@@ -198,6 +198,7 @@ $(function () {
             var map = new google.maps.Map(document.getElementById("map"), mapOptions);
         }
 // Ждем полной загрузки страницы, после этого запускаем initMap()
+//         setTimeout(initMap, 3000);
         google.maps.event.addDomListener(window, "load", initMap);
     }
     else if(window.location.pathname=='/contacts.html'){
