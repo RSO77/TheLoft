@@ -604,7 +604,7 @@
   }
   .section4 {
     padding-top: em(20);
-    padding-bottom: em(120);
+    padding-bottom: em(0);
     position: relative;
     .titl {
       font-size: em(44);
@@ -638,11 +638,14 @@
     }
     .swiper-sl2 {
       margin-top: em(100);
-      height: em(715);
+      height: em(920);
       position: relative;
+      .swiper-slide{
+        //width: em(580)!important;
+      }
       .sw-w {
         width: em(1335);
-        height: 100%;
+        height: em(715);
         background-image: linear-gradient(115deg, #d5ece7, #abd5cb);
         position: absolute;
         right: 0;
@@ -762,6 +765,65 @@
           }
         }
       }
+      .inform-s4{
+        display: none;
+        position: relative;
+        margin-top: em(60);
+        width: 100%;
+        background-image: linear-gradient(127deg, #d5ece7, #85c7b7);
+        box-shadow: -1px 8px 17px 0 rgba(29, 32, 108, 0.13);
+        height: em(400);
+        //width: em(580);
+        padding-top: em(80)!important;
+        text-align: center;
+        z-index: 1;
+        .scrollbar{
+          height: 100%;
+          overflow-y: scroll;
+          width: 90%;
+          background-color: transparent;
+          margin-left: 5%;
+        }
+        .list{
+          margin: 0 auto ;
+          margin-top: em(30);
+          display: inline-block;
+          width: em(420);
+          background-color: white;
+          padding: em(0);
+          box-shadow: -1px 10px 42px 0 rgba(0, 0, 0, 0.1);
+          .scan{
+            width: 100%;
+            img{width: 100%}
+          }
+        }
+        .full-screen{
+          width: em(65);
+          height: em(65);
+          position: absolute;
+          top: em(30);
+          left: em(30);
+          border-radius:em(3);
+          background-color: rgba(94, 94, 94, 0.2);
+          transition: all .4s ease;
+          svg{
+            fill: rgba(255, 255, 255, 0.8);
+            width: em(27);
+            height: em(27);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+          }
+          &:hover{
+            background-color: rgba(94, 94, 94, 0.7);
+            svg{fill: #FFF}
+          }
+        }
+      }
+      .inform-s4-active{
+        display: block;
+      }
     }
     .swiper-button-next, .swiper-button-prev {
       position: absolute;
@@ -770,6 +832,8 @@
       z-index: 2;
       background: url("");
       background-color: white;
+      //bottom: em(40);
+      top: em(880);
       svg {
         width: em(36);
         position: absolute;
@@ -780,8 +844,6 @@
       }
     }
     .swiper-button-next {
-      top: auto;
-      bottom: em(40);
       left: em(600);
 
       p {
@@ -793,8 +855,6 @@
       }
     }
     .swiper-button-prev {
-      top: auto;
-      bottom: em(40);
       left: em(472);
       &:before {
         content: '';
@@ -807,73 +867,16 @@
       }
     }
 
-    .inform-s4{
-      display: none;
-      position: absolute;
-      top:em(740);
-      left: em(670);
-      z-index: 99;
-      background-image: linear-gradient(127deg, #d5ece7, #85c7b7);
-      box-shadow: -1px 8px 17px 0 rgba(29, 32, 108, 0.13);
-      height: em(400);
-      width: em(570);
-      padding: em(80) 0 em(40) 0!important;
-      text-align: center;
-      .scrollbar{
-        height: 100%;
-        overflow-y: scroll;
-        width: 90%;
-        background-color: transparent;
-        margin-left: 5%;
-      }
-      .list{
-        margin: 0 auto ;
-        display: inline-block;
-        width: em(420);
-        background-color: white;
-        padding: em(0);
-        box-shadow: -1px 10px 42px 0 rgba(0, 0, 0, 0.1);
-        .scan{
-          width: 100%;
-          img{width: 100%}
-        }
-      }
-      .full-screen{
-        width: em(65);
-        height: em(65);
-        position: absolute;
-        top: em(30);
-        left: em(30);
-        border-radius:em(3);
-        background-color: rgba(94, 94, 94, 0.2);
-        transition: all .4s ease;
-        svg{
-          fill: rgba(255, 255, 255, 0.8);
-          width: em(27);
-          height: em(27);
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate3d(-50%, -50%, 0);
-        }
-        &:hover{
-          background-color: rgba(94, 94, 94, 0.7);
-          svg{fill: #FFF}
-        }
-      }
-    }
-    .inform-s4-active{
-      display: block;
-    }
 
-    ///scrin
+
+    ///scrol
     .scrollbar{
     }
     .force-overflow{
 
     }
     .scroll-s4::-webkit-scrollbar{
-      width: 8px;
+      width: 7px;
       border-radius: 7px;
       background-color: rgba(248, 248, 248, 0.3);
     }
@@ -888,7 +891,7 @@
 
   }
   .section5 {
-    padding-top: em(40);
+    padding-top: em(10);
     position: relative;
     padding-bottom: em(50);
     overflow: hidden;

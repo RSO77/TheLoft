@@ -296,7 +296,7 @@
   }
   .section4 {
     padding-top: em(95);
-    padding-bottom: em(100);
+    padding-bottom: 0;
     position: relative;
     .titl{
       font-size: em(40);
@@ -318,11 +318,11 @@
     }
     .swiper-sl2{
       margin-top: em(90);
-      height: em(615);
+      height: em(920);
       position: relative;
       .sw-w{
         width: em(1335);
-        height: 100%;
+        height: em(650);
         background-image: linear-gradient(115deg, #d5ece7, #abd5cb);
         position: absolute;
         right: 0;
@@ -425,6 +425,27 @@
           .plus{img{opacity: 1}}
         }
       }
+      .inform-s4{
+        display: none;
+        width: 100%;
+        .list{
+          margin: 0 auto ;
+          margin-top: em(30);
+          width: em(420);
+          padding: em(0);
+          .full-screen{
+            width: em(87);
+            height: em(87);
+            svg{
+              width: em(27);
+              height: em(27);
+            }
+          }
+        }
+      }
+      .inform-s4-active{
+        display: block;
+      }
     }
     .swiper-button-next, .swiper-button-prev{
       position: absolute;
@@ -439,45 +460,15 @@
       }
     }
     .swiper-button-next{
-      top: auto;
-      bottom: em(30);
       left: em(250);
     }
     .swiper-button-prev{
-      top: auto;
-      bottom: em(30);
       left: em(85);
     }
-    .inform-s4{
-      display: none;
-      position: absolute;
-      top:em(800);
-      left: em(160);
-      z-index: 99;
-      background-image: linear-gradient(127deg, #d5ece7, #85c7b7);
-      box-shadow: -1px 8px 17px 0 rgba(29, 32, 108, 0.13);
-      height: em(400);
-      width: em(700);
-      .list{
-        width: em(530);
-        line-height: em(24);
-        background-color: white;
-        .full-screen{
-          width: em(87);
-          height: em(87);
-          svg{
-            width: em(27);
-            height: em(27);
-          }
-        }
-      }
-    }
-    .inform-s4-active{
-      display: block;
-    }
+
   }
   .section5 {
-    padding-top: em(25);
+    padding-top: em(0);
     padding-bottom: em(37);
     .titl{
       font-size: em(40);

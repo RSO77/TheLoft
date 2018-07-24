@@ -52,10 +52,10 @@ $(function () {
         loop: true,
         slidesPerGroup: 1,
         loopFillGroupWithBlank: true,
-        autoplay: {
-            delay: 1000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 1000,
+        //     disableOnInteraction: false,
+        // },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -321,6 +321,11 @@ $(function () {
         dots: false,
         centerMode: false,
         focusOnSelect: true,
+        breakpoints: {
+            1024: {
+                slidesToShow: 3,
+            }
+        },
         responsive: [
             {
                 breakpoint: 1024,
