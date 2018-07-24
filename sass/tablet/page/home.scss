@@ -69,7 +69,7 @@
       height: em(752);
       position: relative;
       overflow: hidden;
-      background-image: url("/media/img/bg-pic.png");
+      background-image: url("./media/img/bg-pic.png");
       background-size: cover;
       img {
         display: none;
@@ -95,7 +95,7 @@
       margin-left: em(26);
       margin-top: em(52);
       position: relative;
-      background-image: url("/media/img/bitmap.png");
+      background-image: url("./media/img/bitmap.png");
       background-size: cover;
       background-position: right;
       img {
@@ -239,7 +239,7 @@
       height: em(545);
       margin-right: em(25);
       margin-top: em(85);
-      background-image: url("/media/img/bitmap3.png");
+      background-image: url("./media/img/bitmap3.png");
       background-size: cover;
       background-position: right;
       img{display: none}

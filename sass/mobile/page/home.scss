@@ -48,7 +48,7 @@
       float: none;
       width: 100%;
       height: em(1170);
-      background-image: url("/media/img/bg-pic.png");
+      background-image: url("./media/img/bg-pic.png");
       background-size: cover;
       background-position: center;
       img {
@@ -76,7 +76,7 @@
       height: em(810);
       margin-left: 0;
       position: relative;
-      background-image: url("/media/img/bitmap2.png");
+      background-image: url("./media/img/bitmap2.png");
       background-size: cover;
       background-position: left;
       img {
@@ -280,7 +280,7 @@
       margin-top: em(860);
       margin-right: 0;
       position: relative;
-      background-image: url("/media/img/bitmap3.png");
+      background-image: url("./media/img/bitmap3.png");
       background-size: cover;
       background-position: right;
       img{display: none;}
