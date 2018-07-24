@@ -2,46 +2,6 @@
   padding-top: em(18);
   position: relative;
   overflow: hidden;
-  .breadcrumbs {
-    &-wrapper {
-      margin-bottom: em(66);
-      padding-left: em(277);
-    }
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    &-item {
-      position: relative;
-      display: inline-block;
-      padding-right: 23px;
-      color: #5e5e5e;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 4px;
-        transform: translateY(-50%);
-        display: block;
-        width: 10px;
-        height: 12px;
-        background-image: url('../img/bc-arrow.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-      }
-      &:last-child {
-        padding-right: 0;
-        &:before {
-          display: none;
-        }
-      }
-      & a {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-      }
-    }
-  }
   .section1{
     padding-top: em(17);
     .slider {
@@ -106,7 +66,7 @@
             height: em(100) !important;
           }
         }
-        .slick-center{
+        .slick-current{
           img{
             border: solid 2px #58a794;
           }

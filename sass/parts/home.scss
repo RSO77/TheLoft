@@ -812,17 +812,31 @@
       position: absolute;
       top:em(740);
       left: em(670);
-      padding: em(80) em(80) em(40);
       z-index: 99;
       background-image: linear-gradient(127deg, #d5ece7, #85c7b7);
       box-shadow: -1px 8px 17px 0 rgba(29, 32, 108, 0.13);
       height: em(400);
-      overflow-y: scroll;
+      width: em(570);
+      padding: em(80) 0 em(40) 0!important;
+      text-align: center;
+      .scrollbar{
+        height: 100%;
+        overflow-y: scroll;
+        width: 90%;
+        background-color: transparent;
+        margin-left: 5%;
+      }
       .list{
+        margin: 0 auto ;
+        display: inline-block;
         width: em(420);
         background-color: white;
         padding: em(0);
         box-shadow: -1px 10px 42px 0 rgba(0, 0, 0, 0.1);
+        .scan{
+          width: 100%;
+          img{width: 100%}
+        }
       }
       .full-screen{
         width: em(65);
@@ -850,6 +864,26 @@
     }
     .inform-s4-active{
       display: block;
+    }
+
+    ///scrin
+    .scrollbar{
+    }
+    .force-overflow{
+
+    }
+    .scroll-s4::-webkit-scrollbar{
+      width: 8px;
+      border-radius: 7px;
+      background-color: rgba(248, 248, 248, 0.3);
+    }
+    .scroll-s4::-webkit-scrollbar-thumb{
+      border-radius: 7px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: inset 0 0 2px 0 #b9b9b9;
+    }
+    .scroll-s4::-webkit-scrollbar-track{
+      background-color: rgba(248, 248, 248, 0.33);
     }
 
   }
@@ -1087,7 +1121,7 @@
     }
     .swiper-pagination-bullet {
       font-size: 18px;
-      width: 60px;
+      width: 80px;
       line-height: 20px;
       letter-spacing: 2px;
       font-family: MontserratRegular;
@@ -1108,6 +1142,19 @@
       padding-bottom: 39px;
       background-color: transparent;
       border-bottom: 2px solid #1b342e;
+    }
+    .swiper-scrollbar{
+      bottom: em(170);
+      left: em(800);
+      width: em(330);
+      height: 1px;
+      background-color: #5e5e5e;
+      opacity: 1!important;
+    }
+    .swiper-scrollbar-drag{
+      //width: em(110)!important;
+      height: 2px;
+      background-color: #1b342e;
     }
   }
 }

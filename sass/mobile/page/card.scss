@@ -1,40 +1,5 @@
 .card {
   padding-top: em(35);
-  .breadcrumbs {
-    display: flex;
-    align-items: center;
-    &-wrapper {
-      margin-bottom: em(60);
-      padding-left: em(35);
-    }
-    &-item {
-      padding-right: 22px;
-      &:before {
-        width: 6px;
-        right: 10px;
-        right: 6px;
-      }
-      & a {
-        font-size: 12px;
-        line-height: 15px;
-      }
-    }
-    &-shortcut {
-      padding-right: 22px;
-      & a {
-        display: block;
-        font-size: 0;
-        line-height: 0;
-        width: 21px;
-        height: 11px;
-        background-image: url('../img/shortcut-img.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-      }
-    }
-    .mob{display: none}
-  }
   .section1{
     padding-top: 0;
     .slider {

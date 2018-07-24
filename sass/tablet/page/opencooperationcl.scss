@@ -3,16 +3,7 @@
         background-image: url('../img/oc-cl-tab.png');
         background-position: center;
     }
-    .breadcrumbs {
-        &-item {
-            padding-right: 24px;
-            &:before {
-                right: 5px;
-                width: 9px;
-                height: 10px;
-            }
-        }
-    }
+
     .section1 {
         &-heading {
             margin-bottom: em(16);

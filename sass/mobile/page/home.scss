@@ -461,7 +461,6 @@
       top:em(1700);
       left: 0;
       right: 0;
-      padding: em(50) em(80);
       z-index: 99;
       background-image: linear-gradient(127deg, #d5ece7, #85c7b7);
       box-shadow: -1px 8px 17px 0 rgba(29, 32, 108, 0.13);
@@ -469,15 +468,9 @@
       width: 100%;
       overflow-y: scroll;
       .list{
-        width: 100%;
-        font-size: em(24);
-        font-family: MontserratRegular;
-        line-height: em(36, 24);
+        width: em(580);
         color: #b9b9b9;
         background-color: white;
-        padding: em(40,24);
-        .text{
-        }
       }
     }
     .inform-s4-active{
@@ -507,7 +500,7 @@
         height: em(6, 44);
       }
     }
-    .map{
+    #map{
       margin-top: em(750);
       width: 100%;
       height: em(1322);

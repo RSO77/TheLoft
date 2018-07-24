@@ -1,11 +1,5 @@
 .contacts{
   padding-top: em(35);
-  .breadcrumbs {
-    &-wrapper {
-      margin-bottom: em(47);
-      padding-left: em(57);
-    }
-  }
   .section1{
     position: relative;
     overflow: hidden;
@@ -89,7 +83,7 @@
         }
       }
     }
-    .map{
+    #map-contact{
       position: relative;
       z-index: 2;
       margin-top: em(-255);
@@ -113,13 +107,14 @@
         width: em(360);
         p{
           font-size: em(24);
-          margin-bottom: em(40,24);
+          margin-bottom: em(30,24);
         }
         input, textarea{
           font-size: em(24);
           border-bottom: 2px solid #b9b9b9;
           width: 100%;
           &:hover{border-bottom: 2px solid #d5d5d5;}
+          &:focus{border-bottom: 2px solid #1b342e;}
         }
       }
       .name{

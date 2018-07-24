@@ -78,7 +78,7 @@
         <ul class="breadcrumbs">
             <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
             <li class="breadcrumbs-item breadcrumbs-shortcut"><a href="#">Сотрудничество</a></li>
-            <li class="breadcrumbs-item"><a href="#">Дилерам</a></li>
+            <li class="breadcrumbs-item breadcrumbs-current"><a>Дилерам</a></li>
         </ul>
     </div>
 
@@ -129,7 +129,7 @@
                 </a></li>
             </ul>
         </div>
-        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d57514.871769964164!2d30.496653673717052!3d50.42578348574895!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1531939500780" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <div id="map-contact"></div>
         <form class="feedback" action="">
             <div class="titl-feed">ОБРАТНАЯ СВЯЗЬ</div>
             <div class="name">
@@ -227,9 +227,9 @@
     </div>
 </footer>
 
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb0QGeFu5sD7h3P_MeHoGrmUZqT97UOSk&callback=initMap"
+        type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/castom-scroll.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/swiper.js"></script>
 <script type="text/javascript" src="js/resize.js"></script>

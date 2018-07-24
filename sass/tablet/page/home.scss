@@ -453,12 +453,11 @@
       position: absolute;
       top:em(800);
       left: em(160);
-      padding: em(50) em(80);
       z-index: 99;
       background-image: linear-gradient(127deg, #d5ece7, #85c7b7);
       box-shadow: -1px 8px 17px 0 rgba(29, 32, 108, 0.13);
       height: em(400);
-      overflow-y: scroll;
+      width: em(700);
       .list{
         width: em(530);
         line-height: em(24);
@@ -500,7 +499,7 @@
         height: em(6,40);
       }
     }
-    .map{
+    #map{
       margin-top: em(790);
       width: 100%;
       height: em(870);

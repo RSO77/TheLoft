@@ -29,6 +29,11 @@ $(function () {
             delay: 7000,
             disableOnInteraction: false,
         },
+        // scrollbar: {
+        //     el: '.ss1',
+        //     hide: false,
+        //     dragSize: 130,
+        // },
         pagination: {
             el: '.sp1',
             clickable: true,
@@ -47,10 +52,10 @@ $(function () {
         loop: true,
         slidesPerGroup: 1,
         loopFillGroupWithBlank: true,
-        // autoplay: {
-        //     delay: 1000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -89,6 +94,217 @@ $(function () {
         }
     });
 
+    //map
+    if(window.location.pathname=='/'){
+        // initMap() - функция инициализации карты
+        function initMap() {
+            // Координаты центра на карте. Широта: 56.2928515, Долгота: 43.7866641
+            var centerLatLng = new google.maps.LatLng(50.463696, 30.513968);
+            // Обязательные опции с которыми будет проинициализированна карта
+            var mapOptions = {
+                center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
+                zoom: 11,               // Зум по умолчанию. Возможные значения от 0 до 21
+                styles:[
+                    { "featureType": "all", "elementType": "labels.text.fill",
+                        "stylers": [
+                            {"saturation": 36},
+                            {"color": "#333333"},
+                            {"lightness": 40}
+                        ]
+                    },
+                    {"featureType": "all","elementType": "labels.text.stroke",
+                        "stylers": [
+                            {"visibility": "on"},
+                            {"color": "#ffffff"},
+                            {"lightness": 16}
+                        ]
+                    },
+                    {"featureType": "all","elementType": "labels.icon",
+                        "stylers": [
+                            {"visibility": "off"}
+                        ]
+                    },
+                    {"featureType": "administrative","elementType": "geometry.fill",
+                        "stylers": [
+                            {"color": "#f7f7f7"},
+                            {"lightness": 20}
+                        ]
+                    },
+                    {"featureType": "administrative","elementType": "geometry.stroke",
+                        "stylers": [
+                            {"color": "#f7f7f7"},
+                            {"lightness": 17},
+                            {"weight": 1.2}
+                        ]
+                    },
+                    {"featureType": "landscape","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#f7f7f7"},
+                            {"lightness": 20}
+                        ]
+                    },
+                    { "featureType": "poi","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#f5f5f5"},
+                            {"lightness": 21}
+                        ]
+                    },
+                    {"featureType": "poi.park","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#dedede"},
+                            {"lightness": 21}
+                        ]
+                    },
+                    {"featureType": "road.highway","elementType": "geometry.fill",
+                        "stylers": [
+                            {"color": "#ffffff"},
+                            {"lightness": 17}
+                        ]
+                    },
+                    {"featureType": "road.highway","elementType": "geometry.stroke",
+                        "stylers": [
+                            { "color": "#ffffff"},
+                            {"lightness": 29},
+                            {"weight": 0.2}
+                        ]
+                    },
+                    {"featureType": "road.arterial","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#ffffff"},
+                            {"lightness": 18}
+                        ]
+                    },
+                    {"featureType": "road.local","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#ffffff"},
+                            {"lightness": 16}
+                        ]
+                    },
+                    {"featureType": "transit","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#f2f2f2"},
+                            {"lightness": 19}
+                        ]
+                    },
+                    {"featureType": "water","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#99ccc0"},
+                            {"lightness": 17}
+                        ]
+                    }
+                ]
+            };
+            // Создаем карту внутри элемента #map
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+// Ждем полной загрузки страницы, после этого запускаем initMap()
+        google.maps.event.addDomListener(window, "load", initMap);
+    }
+    else if(window.location.pathname=='/contacts.html'){
+        function initMap() {
+            // Координаты центра на карте. Широта: 56.2928515, Долгота: 43.7866641
+            var centerLatLng = new google.maps.LatLng(50.463696, 30.513968);
+            // Обязательные опции с которыми будет проинициализированна карта
+            var mapOptions = {
+                center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
+                zoom: 11,               // Зум по умолчанию. Возможные значения от 0 до 21
+                styles:[
+                    { "featureType": "all", "elementType": "labels.text.fill",
+                        "stylers": [
+                            {"saturation": 36},
+                            {"color": "#333333"},
+                            {"lightness": 40}
+                        ]
+                    },
+                    {"featureType": "all","elementType": "labels.text.stroke",
+                        "stylers": [
+                            {"visibility": "on"},
+                            {"color": "#ffffff"},
+                            {"lightness": 16}
+                        ]
+                    },
+                    {"featureType": "all","elementType": "labels.icon",
+                        "stylers": [
+                            {"visibility": "off"}
+                        ]
+                    },
+                    {"featureType": "administrative","elementType": "geometry.fill",
+                        "stylers": [
+                            {"color": "#f7f7f7"},
+                            {"lightness": 20}
+                        ]
+                    },
+                    {"featureType": "administrative","elementType": "geometry.stroke",
+                        "stylers": [
+                            {"color": "#f7f7f7"},
+                            {"lightness": 17},
+                            {"weight": 1.2}
+                        ]
+                    },
+                    {"featureType": "landscape","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#f7f7f7"},
+                            {"lightness": 20}
+                        ]
+                    },
+                    { "featureType": "poi","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#f5f5f5"},
+                            {"lightness": 21}
+                        ]
+                    },
+                    {"featureType": "poi.park","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#dedede"},
+                            {"lightness": 21}
+                        ]
+                    },
+                    {"featureType": "road.highway","elementType": "geometry.fill",
+                        "stylers": [
+                            {"color": "#ffffff"},
+                            {"lightness": 17}
+                        ]
+                    },
+                    {"featureType": "road.highway","elementType": "geometry.stroke",
+                        "stylers": [
+                            { "color": "#ffffff"},
+                            {"lightness": 29},
+                            {"weight": 0.2}
+                        ]
+                    },
+                    {"featureType": "road.arterial","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#ffffff"},
+                            {"lightness": 18}
+                        ]
+                    },
+                    {"featureType": "road.local","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#ffffff"},
+                            {"lightness": 16}
+                        ]
+                    },
+                    {"featureType": "transit","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#f2f2f2"},
+                            {"lightness": 19}
+                        ]
+                    },
+                    {"featureType": "water","elementType": "geometry",
+                        "stylers": [
+                            {"color": "#99ccc0"},
+                            {"lightness": 17}
+                        ]
+                    }
+                ]
+            };
+
+            // Создаем карту внутри элемента #map
+            var map = new google.maps.Map(document.getElementById("map-contact"), mapOptions);
+        }
+// Ждем полной загрузки страницы, после этого запускаем initMap()
+        google.maps.event.addDomListener(window, "load", initMap);
+    }
 
     //slider card
     $('.slider-big').slick({
@@ -99,12 +315,19 @@ $(function () {
         asNavFor: '.slider-litl'
     });
     $('.slider-litl').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.slider-big',
         dots: false,
-        centerMode: true,
-        focusOnSelect: true
+        centerMode: false,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }]
     });
     //menu
     $('#nav-icon1').click(function () {
@@ -271,7 +494,7 @@ $(function () {
     function elVisibility(parentBlock, elementClass) {
         var wScroll = $(window).scrollTop();
         var blockOffset = $(parentBlock).offset().top;
-        if((wScroll - 20) > blockOffset) {
+        if((wScroll + 100) > blockOffset) {
             $(elementClass).css({'visibility': 'visible', 'opacity': '1' });
         }
     }

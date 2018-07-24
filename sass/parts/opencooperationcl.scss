@@ -4,16 +4,7 @@
         background-image: url('../img/oc-cl.png');
         background-position: em(-4) center;
     }
-    .breadcrumbs {
-        &-item {
-            padding-right: 42px;
-            &:before {
-                right: 13px;
-                width: 11px;
-                height: 10px;
-            }
-        }
-    }
+
     .section1 {
         &-right {
             margin-bottom: em(117);
