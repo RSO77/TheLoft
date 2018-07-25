@@ -55,9 +55,10 @@
         transition: width .2s ease-in-out;
       }
     }
-    li:hover a:before,
+    li:active a:before,
     li:focus a:before{
       width: 0;
+      color: rgba(27, 52, 46, 0.82);
     }
     .bot-inform{
       font-size: em(26);
