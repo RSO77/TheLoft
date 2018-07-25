@@ -13,36 +13,18 @@
         display: flex;
         width: 100%;
     }
-}
-
-.category-plus-1 {
-    .section3 {
-        margin-bottom: 0;
-        padding: 0;
-        .block {
-            display: none;
+    .category-col-wrapper-lg {
+        width: 100%;
+        .category-goods-img {
+            padding-left: em(50);
         }
     }
-}
-
-.category-plus-2 {
-    .section3 {
-        display: block;
-        margin-bottom: 0;
-        padding: 0;
-        .block-1, .block-2 {
-            display: none;
-        }
+    
+    .category-col-wrapper-mid {
+        width: 100%;
+    }
+    
+    .category-col-wrapper-sm {
+        width: 50%;
     }
 }
-
-.category-plus-3 {
-    .section3 {
-        display: block;
-        margin-bottom: 0;
-        padding: 0;
-        .block-1 {
-            display: none;
-        }
-        }
-    }

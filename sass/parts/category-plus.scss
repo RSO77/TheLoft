@@ -12,6 +12,7 @@
         padding-top: em(85);
         .category-goods {
             display: flex;
+            flex-wrap: wrap;
         }
         .category-goods-col {
             width: 33.333%;
@@ -77,52 +78,15 @@
                 width: 100%;
             }
         }
-    }
-}
-
-.category-plus-1 {
-    .section3 {
-        margin-bottom: em(162);
-        padding: 0 em(270);
-        .block {
-            min-height: em(434);
-            background: #FCECEE;
+        .category-col-wrapper-mid {
+            width: 66.667%;
         }
-    }
-}
-
-.category-plus-2 {
-    .section3 {
-        display: flex;
-        margin-bottom: em(162);
-        padding: 0 em(270);
-        .block-1, .block-2 {
-            min-height: em(434);
-            background: #58A794;
-        }
-        .block-1 {
-            width: 33.333%;
-        }
-        .block-2 {
-            margin-right: em(36);
-            width: 66.666%;
-        }
-    }
-}
-
-.category-plus-3 {
-    .section3 {
-        display: flex;
-        margin-bottom: em(162);
-        padding: 0 em(270);
-        .block-1 {
-            width: 33.333%;
-            min-height: em(434);
-            margin-right: em(36);
-            background: #4A90E2;
-            &:last-child {
-                margin-right: 0;
+        .category-col-wrapper-lg {
+            width: 100%;
+            .category-goods-img {
+                padding-left: em(100);
             }
         }
     }
 }
+
